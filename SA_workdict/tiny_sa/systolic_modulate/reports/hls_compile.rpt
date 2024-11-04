@@ -1,0 +1,334 @@
+
+
+================================================================
+== Synthesis Summary Report of 'systolic_modulate'
+================================================================
++ General Information: 
+    * Date:           Mon Nov  4 21:47:47 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        systolic_modulate
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: virtexuplusHBM
+    * Target device:  xcu280-fsvh2892-2L-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+------------+------------+-----+
+    |                                        Modules                                       | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |          |            |            |     |
+    |                                        & Loops                                       | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF     |     LUT    | URAM|
+    +--------------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+------------+------------+-----+
+    |+ systolic_modulate                                                                   |     -|  0.76|     1724|  1.724e+04|         -|     1725|     -|        no|     -|  40 (~0%)|  5376 (~0%)|  6332 (~0%)|    -|
+    | o l_ni                                                                               |     -|  7.30|     1723|  1.723e+04|       160|        -|    24|        no|     -|         -|           -|           -|    -|
+    |  + dataflow_in_loop_l_ni_1*                                                          |     -|  0.76|      158|  1.580e+03|         -|       68|     -|  dataflow|     -|  40 (~0%)|  5288 (~0%)|  6293 (~0%)|    -|
+    |   + dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc                               |     -|  5.82|       11|    110.000|         -|       11|     -|        no|     -|         -|    16 (~0%)|   108 (~0%)|    -|
+    |    + dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak    |     -|  5.82|       10|    100.000|         -|       10|     -|        no|     -|         -|    11 (~0%)|    62 (~0%)|    -|
+    |     o l_load_A_tile_ak                                                               |     -|  7.30|        8|     80.000|         2|        1|     8|       yes|     -|         -|           -|           -|    -|
+    |   + dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc                               |     -|  3.17|       66|    660.000|         -|       66|     -|        no|     -|         -|    25 (~0%)|   201 (~0%)|    -|
+    |    o l_load_B_tile_bk_l_bj                                                           |     -|  7.30|       64|    640.000|         2|        1|    64|       yes|     -|         -|           -|           -|    -|
+    |   + systolic_tile_modulate*                                                          |     -|  0.76|       79|    790.000|         -|       68|     -|  dataflow|     -|  40 (~0%)|  4377 (~0%)|  4959 (~0%)|    -|
+    |    + systolic_tile_modulate_Loop_l_data_load_k8_proc21                               |     -|  4.76|       67|    670.000|         -|       67|     -|        no|     -|         -|   289 (~0%)|   290 (~0%)|    -|
+    |     o l_data_load_k8_l_S_n_1_n                                                       |     -|  7.30|       65|    650.000|         3|        1|    64|       yes|     -|         -|           -|           -|    -|
+    |    + PE_kernel_modulate_0_0_1                                                        |     -|  0.76|       21|    210.000|         -|       21|     -|        no|     -|   5 (~0%)|   419 (~0%)|   460 (~0%)|    -|
+    |     o l_S_k_0_k                                                                      |    II|  7.30|       19|    190.000|         6|        2|     8|       yes|     -|         -|           -|           -|    -|
+    |    + PE_kernel_modulate_1_0_1                                                        |     -|  0.76|       21|    210.000|         -|       21|     -|        no|     -|   5 (~0%)|   418 (~0%)|   451 (~0%)|    -|
+    |     o l_S_k_0_k1                                                                     |    II|  7.30|       19|    190.000|         6|        2|     8|       yes|     -|         -|           -|           -|    -|
+    |    + PE_kernel_modulate_2_0_1                                                        |     -|  0.76|       21|    210.000|         -|       21|     -|        no|     -|   5 (~0%)|   418 (~0%)|   451 (~0%)|    -|
+    |     o l_S_k_0_k2                                                                     |    II|  7.30|       19|    190.000|         6|        2|     8|       yes|     -|         -|           -|           -|    -|
+    |    + PE_kernel_modulate_3_0_1                                                        |     -|  0.76|       21|    210.000|         -|       21|     -|        no|     -|   5 (~0%)|   418 (~0%)|   451 (~0%)|    -|
+    |     o l_S_k_0_k3                                                                     |    II|  7.30|       19|    190.000|         6|        2|     8|       yes|     -|         -|           -|           -|    -|
+    |    + PE_kernel_modulate_4_0_1                                                        |     -|  0.76|       21|    210.000|         -|       21|     -|        no|     -|   5 (~0%)|   418 (~0%)|   451 (~0%)|    -|
+    |     o l_S_k_0_k4                                                                     |    II|  7.30|       19|    190.000|         6|        2|     8|       yes|     -|         -|           -|           -|    -|
+    |    + PE_kernel_modulate_5_0_1                                                        |     -|  0.76|       21|    210.000|         -|       21|     -|        no|     -|   5 (~0%)|   418 (~0%)|   451 (~0%)|    -|
+    |     o l_S_k_0_k5                                                                     |    II|  7.30|       19|    190.000|         6|        2|     8|       yes|     -|         -|           -|           -|    -|
+    |    + PE_kernel_modulate_6_0_1                                                        |     -|  0.76|       21|    210.000|         -|       21|     -|        no|     -|   5 (~0%)|   418 (~0%)|   451 (~0%)|    -|
+    |     o l_S_k_0_k6                                                                     |    II|  7.30|       19|    190.000|         6|        2|     8|       yes|     -|         -|           -|           -|    -|
+    |    + PE_kernel_modulate_7_0_1                                                        |     -|  0.76|       21|    210.000|         -|       21|     -|        no|     -|   5 (~0%)|   418 (~0%)|   451 (~0%)|    -|
+    |     o l_S_k_0_k7                                                                     |    II|  7.30|       19|    190.000|         6|        2|     8|       yes|     -|         -|           -|           -|    -|
+    |    + systolic_tile_modulate_Loop_l_data_drain_k9_proc22                              |     -|  4.76|       66|    660.000|         -|       66|     -|        no|     -|         -|    19 (~0%)|   204 (~0%)|    -|
+    |     o l_data_drain_k9_l_S_n_5_n1                                                     |     -|  7.30|       64|    640.000|         2|        1|    64|       yes|     -|         -|           -|           -|    -|
+    |   + dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc                              |     -|  3.97|       11|    110.000|         -|       11|     -|        no|     -|         -|    15 (~0%)|   143 (~0%)|    -|
+    |    + dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj  |     -|  5.01|       10|    100.000|         -|       10|     -|        no|     -|         -|     6 (~0%)|   109 (~0%)|    -|
+    |     o l_store_C_tile_sj                                                              |     -|  7.30|        8|     80.000|         1|        1|     8|       yes|     -|         -|           -|           -|    -|
+    +--------------------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++---------------+-----------+----------+
+| Port          | Direction | Bitwidth |
++---------------+-----------+----------+
+| v217_address0 | out       | 3        |
+| v217_address1 | out       | 3        |
+| v217_d0       | out       | 32       |
+| v217_d1       | out       | 32       |
+| v217_q0       | in        | 32       |
+| v217_q1       | in        | 32       |
+| v218_address0 | out       | 11       |
+| v218_address1 | out       | 11       |
+| v218_d0       | out       | 32       |
+| v218_d1       | out       | 32       |
+| v218_q0       | in        | 32       |
+| v218_q1       | in        | 32       |
+| v219_address0 | out       | 8        |
+| v219_address1 | out       | 8        |
+| v219_d0       | out       | 32       |
+| v219_d1       | out       | 32       |
+| v219_q0       | in        | 32       |
+| v219_q1       | in        | 32       |
++---------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| v217     | in        | float*   |
+| v218     | in        | float*   |
+| v219     | out       | float*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+---------------+---------+----------+
+| Argument | HW Interface  | HW Type | HW Usage |
++----------+---------------+---------+----------+
+| v217     | v217_address0 | port    | offset   |
+| v217     | v217_ce0      | port    |          |
+| v217     | v217_d0       | port    |          |
+| v217     | v217_q0       | port    |          |
+| v217     | v217_we0      | port    |          |
+| v217     | v217_address1 | port    | offset   |
+| v217     | v217_ce1      | port    |          |
+| v217     | v217_d1       | port    |          |
+| v217     | v217_q1       | port    |          |
+| v217     | v217_we1      | port    |          |
+| v218     | v218_address0 | port    | offset   |
+| v218     | v218_ce0      | port    |          |
+| v218     | v218_d0       | port    |          |
+| v218     | v218_q0       | port    |          |
+| v218     | v218_we0      | port    |          |
+| v218     | v218_address1 | port    | offset   |
+| v218     | v218_ce1      | port    |          |
+| v218     | v218_d1       | port    |          |
+| v218     | v218_q1       | port    |          |
+| v218     | v218_we1      | port    |          |
+| v219     | v219_address0 | port    | offset   |
+| v219     | v219_ce0      | port    |          |
+| v219     | v219_d0       | port    |          |
+| v219     | v219_q0       | port    |          |
+| v219     | v219_we0      | port    |          |
+| v219     | v219_address1 | port    | offset   |
+| v219     | v219_ce1      | port    |          |
+| v219     | v219_d1       | port    |          |
+| v219     | v219_q1       | port    |          |
+| v219     | v219_we1      | port    |          |
++----------+---------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+| Name                                                                                | DSP | Pragma | Variable    | Op   | Impl    | Latency |
++-------------------------------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+| + systolic_modulate                                                                 | 40  |        |             |      |         |         |
+|  + dataflow_in_loop_l_ni_1                                                          | 40  |        |             |      |         |         |
+|   + dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc                              | 0   |        |             |      |         |         |
+|    + dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak   | 0   |        |             |      |         |         |
+|      add_ln655_fu_88_p2                                                             |     |        | add_ln655   | add  | fabric  | 0       |
+|   + dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc                              | 0   |        |             |      |         |         |
+|     add_ln666_1_fu_253_p2                                                           |     |        | add_ln666_1 | add  | fabric  | 0       |
+|     add_ln666_fu_265_p2                                                             |     |        | add_ln666   | add  | fabric  | 0       |
+|     add_ln669_fu_327_p2                                                             |     |        | add_ln669   | add  | fabric  | 0       |
+|     add_ln667_fu_352_p2                                                             |     |        | add_ln667   | add  | fabric  | 0       |
+|   + systolic_tile_modulate                                                          | 40  |        |             |      |         |         |
+|    + systolic_tile_modulate_Loop_l_data_load_k8_proc21                              | 0   |        |             |      |         |         |
+|      add_ln578_1_fu_356_p2                                                          |     |        | add_ln578_1 | add  | fabric  | 0       |
+|      add_ln578_fu_368_p2                                                            |     |        | add_ln578   | add  | fabric  | 0       |
+|      add_ln583_fu_419_p2                                                            |     |        | add_ln583   | add  | fabric  | 0       |
+|    + PE_kernel_modulate_0_0_1                                                       | 5   |        |             |      |         |         |
+|      k_2_fu_116_p2                                                                  |     |        | k_2         | add  | fabric  | 0       |
+|      fmul_32ns_32ns_32_2_max_dsp_1_U39                                              | 3   |        | v15         | fmul | maxdsp  | 1       |
+|      fadd_32ns_32ns_32_3_full_dsp_1_U38                                             | 2   |        | v17         | fadd | fulldsp | 2       |
+|    + PE_kernel_modulate_1_0_1                                                       | 5   |        |             |      |         |         |
+|      k1_2_fu_116_p2                                                                 |     |        | k1_2        | add  | fabric  | 0       |
+|      fmul_32ns_32ns_32_2_max_dsp_1_U48                                              | 3   |        | v36         | fmul | maxdsp  | 1       |
+|      fadd_32ns_32ns_32_3_full_dsp_1_U47                                             | 2   |        | v38         | fadd | fulldsp | 2       |
+|    + PE_kernel_modulate_2_0_1                                                       | 5   |        |             |      |         |         |
+|      k2_2_fu_116_p2                                                                 |     |        | k2_2        | add  | fabric  | 0       |
+|      fmul_32ns_32ns_32_2_max_dsp_1_U55                                              | 3   |        | v57         | fmul | maxdsp  | 1       |
+|      fadd_32ns_32ns_32_3_full_dsp_1_U54                                             | 2   |        | v59         | fadd | fulldsp | 2       |
+|    + PE_kernel_modulate_3_0_1                                                       | 5   |        |             |      |         |         |
+|      k3_2_fu_116_p2                                                                 |     |        | k3_2        | add  | fabric  | 0       |
+|      fmul_32ns_32ns_32_2_max_dsp_1_U62                                              | 3   |        | v78         | fmul | maxdsp  | 1       |
+|      fadd_32ns_32ns_32_3_full_dsp_1_U61                                             | 2   |        | v80         | fadd | fulldsp | 2       |
+|    + PE_kernel_modulate_4_0_1                                                       | 5   |        |             |      |         |         |
+|      k4_2_fu_116_p2                                                                 |     |        | k4_2        | add  | fabric  | 0       |
+|      fmul_32ns_32ns_32_2_max_dsp_1_U69                                              | 3   |        | v99         | fmul | maxdsp  | 1       |
+|      fadd_32ns_32ns_32_3_full_dsp_1_U68                                             | 2   |        | v101        | fadd | fulldsp | 2       |
+|    + PE_kernel_modulate_5_0_1                                                       | 5   |        |             |      |         |         |
+|      k5_2_fu_116_p2                                                                 |     |        | k5_2        | add  | fabric  | 0       |
+|      fmul_32ns_32ns_32_2_max_dsp_1_U76                                              | 3   |        | v120        | fmul | maxdsp  | 1       |
+|      fadd_32ns_32ns_32_3_full_dsp_1_U75                                             | 2   |        | v122        | fadd | fulldsp | 2       |
+|    + PE_kernel_modulate_6_0_1                                                       | 5   |        |             |      |         |         |
+|      k6_2_fu_116_p2                                                                 |     |        | k6_2        | add  | fabric  | 0       |
+|      fmul_32ns_32ns_32_2_max_dsp_1_U83                                              | 3   |        | v141        | fmul | maxdsp  | 1       |
+|      fadd_32ns_32ns_32_3_full_dsp_1_U82                                             | 2   |        | v143        | fadd | fulldsp | 2       |
+|    + PE_kernel_modulate_7_0_1                                                       | 5   |        |             |      |         |         |
+|      k7_2_fu_116_p2                                                                 |     |        | k7_2        | add  | fabric  | 0       |
+|      fmul_32ns_32ns_32_2_max_dsp_1_U90                                              | 3   |        | v162        | fmul | maxdsp  | 1       |
+|      fadd_32ns_32ns_32_3_full_dsp_1_U89                                             | 2   |        | v164        | fadd | fulldsp | 2       |
+|    + systolic_tile_modulate_Loop_l_data_drain_k9_proc22                             | 0   |        |             |      |         |         |
+|      add_ln628_fu_164_p2                                                            |     |        | add_ln628   | add  | fabric  | 0       |
+|      add_ln633_fu_197_p2                                                            |     |        | add_ln633   | add  | fabric  | 0       |
+|   + dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc                             | 0   |        |             |      |         |         |
+|    + dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj | 0   |        |             |      |         |         |
+|      add_ln674_fu_159_p2                                                            |     |        | add_ln674   | add  | fabric  | 0       |
+|      empty_fu_173_p2                                                                |     |        | empty       | add  | fabric  | 0       |
++-------------------------------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++----------------------------+----------------+-------------+------+------+--------+----------------+------+---------+------------------+
+| Name                       | Usage          | Type        | BRAM | URAM | Pragma | Variable       | Impl | Latency | Bitwidth, Depth, |
+|                            |                |             |      |      |        |                |      |         | Banks            |
++----------------------------+----------------+-------------+------+------+--------+----------------+------+---------+------------------+
+| + systolic_modulate        |                |             | 0    | 0    |        |                |      |         |                  |
+|  + dataflow_in_loop_l_ni_1 |                |             | 0    | 0    |        |                |      |         |                  |
+|    local_A_0_U             | ram_1p channel | pipo        |      |      |        | local_A_0      | auto | 1       | 32, 8, 2         |
+|    indvars_iv26_c_U        | fifo channel   | scalar prop |      |      |        | indvars_iv26_c | srl  | 0       | 5, 3, 1          |
+|    local_B_U               | ram_1p channel | pipo        |      |      |        | local_B        | auto | 1       | 32, 8, 2         |
+|    local_B_1_49_U          | ram_1p channel | pipo        |      |      |        | local_B_1_49   | auto | 1       | 32, 8, 2         |
+|    local_B_2_50_U          | ram_1p channel | pipo        |      |      |        | local_B_2_50   | auto | 1       | 32, 8, 2         |
+|    local_B_3_51_U          | ram_1p channel | pipo        |      |      |        | local_B_3_51   | auto | 1       | 32, 8, 2         |
+|    local_B_3_U             | ram_1p channel | pipo        |      |      |        | local_B_3      | auto | 1       | 32, 8, 2         |
+|    local_B_2_U             | ram_1p channel | pipo        |      |      |        | local_B_2      | auto | 1       | 32, 8, 2         |
+|    local_B_1_U             | ram_1p channel | pipo        |      |      |        | local_B_1      | auto | 1       | 32, 8, 2         |
+|    local_B_4_U             | ram_1p channel | pipo        |      |      |        | local_B_4      | auto | 1       | 32, 8, 2         |
+|    local_C_0_7_U           | fifo channel   | task level  |      |      |        | local_C_0_7    | srl  | 0       | 32, 2, 1         |
+|    local_C_0_6_U           | fifo channel   | task level  |      |      |        | local_C_0_6    | srl  | 0       | 32, 2, 1         |
+|    local_C_0_5_U           | fifo channel   | task level  |      |      |        | local_C_0_5    | srl  | 0       | 32, 2, 1         |
+|    local_C_0_4_U           | fifo channel   | task level  |      |      |        | local_C_0_4    | srl  | 0       | 32, 2, 1         |
+|    local_C_0_3_U           | fifo channel   | task level  |      |      |        | local_C_0_3    | srl  | 0       | 32, 2, 1         |
+|    local_C_0_2_U           | fifo channel   | task level  |      |      |        | local_C_0_2    | srl  | 0       | 32, 2, 1         |
+|    local_C_0_1_U           | fifo channel   | task level  |      |      |        | local_C_0_1    | srl  | 0       | 32, 2, 1         |
+|    local_C_0_U             | fifo channel   | task level  |      |      |        | local_C_0      | srl  | 0       | 32, 2, 1         |
+|   + systolic_tile_modulate |                |             | 0    | 0    |        |                |      |         |                  |
+|     A_fifo_U               | fifo channel   | stream      |      |      |        | A_fifo         | srl  | 0       | 32, 2, 1         |
+|     B_fifo_U               | fifo channel   | stream      |      |      |        | B_fifo         | srl  | 0       | 32, 9, 1         |
+|     B_fifo_2_U             | fifo channel   | stream      |      |      |        | B_fifo_2       | srl  | 0       | 32, 9, 1         |
+|     B_fifo_4_U             | fifo channel   | stream      |      |      |        | B_fifo_4       | srl  | 0       | 32, 9, 1         |
+|     B_fifo_6_U             | fifo channel   | stream      |      |      |        | B_fifo_6       | srl  | 0       | 32, 9, 1         |
+|     B_fifo_8_U             | fifo channel   | stream      |      |      |        | B_fifo_8       | srl  | 0       | 32, 9, 1         |
+|     B_fifo_10_U            | fifo channel   | stream      |      |      |        | B_fifo_10      | srl  | 0       | 32, 9, 1         |
+|     B_fifo_12_U            | fifo channel   | stream      |      |      |        | B_fifo_12      | srl  | 0       | 32, 9, 1         |
+|     B_fifo_14_U            | fifo channel   | stream      |      |      |        | B_fifo_14      | srl  | 0       | 32, 9, 1         |
+|     A_fifo_1_U             | fifo channel   | stream      |      |      |        | A_fifo_1       | srl  | 0       | 32, 2, 1         |
+|     B_fifo_1_U             | fifo channel   | stream      |      |      |        | B_fifo_1       | srl  | 0       | 32, 9, 1         |
+|     A_fifo_2_U             | fifo channel   | stream      |      |      |        | A_fifo_2       | srl  | 0       | 32, 2, 1         |
+|     B_fifo_3_U             | fifo channel   | stream      |      |      |        | B_fifo_3       | srl  | 0       | 32, 9, 1         |
+|     A_fifo_3_U             | fifo channel   | stream      |      |      |        | A_fifo_3       | srl  | 0       | 32, 2, 1         |
+|     B_fifo_5_U             | fifo channel   | stream      |      |      |        | B_fifo_5       | srl  | 0       | 32, 9, 1         |
+|     A_fifo_4_U             | fifo channel   | stream      |      |      |        | A_fifo_4       | srl  | 0       | 32, 2, 1         |
+|     B_fifo_7_U             | fifo channel   | stream      |      |      |        | B_fifo_7       | srl  | 0       | 32, 9, 1         |
+|     A_fifo_5_U             | fifo channel   | stream      |      |      |        | A_fifo_5       | srl  | 0       | 32, 2, 1         |
+|     B_fifo_9_U             | fifo channel   | stream      |      |      |        | B_fifo_9       | srl  | 0       | 32, 9, 1         |
+|     A_fifo_6_U             | fifo channel   | stream      |      |      |        | A_fifo_6       | srl  | 0       | 32, 2, 1         |
+|     B_fifo_11_U            | fifo channel   | stream      |      |      |        | B_fifo_11      | srl  | 0       | 32, 9, 1         |
+|     A_fifo_7_U             | fifo channel   | stream      |      |      |        | A_fifo_7       | srl  | 0       | 32, 2, 1         |
+|     B_fifo_13_U            | fifo channel   | stream      |      |      |        | B_fifo_13      | srl  | 0       | 32, 9, 1         |
+|     A_fifo_8_U             | fifo channel   | stream      |      |      |        | A_fifo_8       | srl  | 0       | 32, 2, 1         |
+|     B_fifo_15_U            | fifo channel   | stream      |      |      |        | B_fifo_15      | srl  | 0       | 32, 9, 1         |
++----------------------------+----------------+-------------+------+------+--------+----------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+---------+------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type     | Options | Location                                 | Messages                                                                                                                                                                           |
++----------+---------+------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dataflow |         | kernel.cpp:567 in systolic_tile_modulate | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region |
+| dataflow |         | kernel.cpp:654 in systolic_modulate      | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region |
++----------+---------+------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+-------------------------------------------+--------------------------------------------------+
+| Type            | Options                                   | Location                                         |
++-----------------+-------------------------------------------+--------------------------------------------------+
+| stream          | variable=v0 depth=2                       | kernel.cpp:259 in pe_kernel_modulate_0_0, v0     |
+| stream          | variable=v1 depth=9                       | kernel.cpp:260 in pe_kernel_modulate_0_0, v1     |
+| stream          | variable=v2 depth=2                       | kernel.cpp:261 in pe_kernel_modulate_0_0, v2     |
+| stream          | variable=v3 depth=9                       | kernel.cpp:262 in pe_kernel_modulate_0_0, v3     |
+| array_partition | variable=v4 complete dim=2                | kernel.cpp:263 in pe_kernel_modulate_0_0, v4     |
+| stream          | variable=v21 depth=2                      | kernel.cpp:298 in pe_kernel_modulate_1_0, v21    |
+| stream          | variable=v22 depth=9                      | kernel.cpp:299 in pe_kernel_modulate_1_0, v22    |
+| stream          | variable=v23 depth=2                      | kernel.cpp:300 in pe_kernel_modulate_1_0, v23    |
+| stream          | variable=v24 depth=9                      | kernel.cpp:301 in pe_kernel_modulate_1_0, v24    |
+| array_partition | variable=v25 complete dim=2               | kernel.cpp:302 in pe_kernel_modulate_1_0, v25    |
+| stream          | variable=v42 depth=2                      | kernel.cpp:337 in pe_kernel_modulate_2_0, v42    |
+| stream          | variable=v43 depth=9                      | kernel.cpp:338 in pe_kernel_modulate_2_0, v43    |
+| stream          | variable=v44 depth=2                      | kernel.cpp:339 in pe_kernel_modulate_2_0, v44    |
+| stream          | variable=v45 depth=9                      | kernel.cpp:340 in pe_kernel_modulate_2_0, v45    |
+| array_partition | variable=v46 complete dim=2               | kernel.cpp:341 in pe_kernel_modulate_2_0, v46    |
+| stream          | variable=v63 depth=2                      | kernel.cpp:376 in pe_kernel_modulate_3_0, v63    |
+| stream          | variable=v64 depth=9                      | kernel.cpp:377 in pe_kernel_modulate_3_0, v64    |
+| stream          | variable=v65 depth=2                      | kernel.cpp:378 in pe_kernel_modulate_3_0, v65    |
+| stream          | variable=v66 depth=9                      | kernel.cpp:379 in pe_kernel_modulate_3_0, v66    |
+| array_partition | variable=v67 complete dim=2               | kernel.cpp:380 in pe_kernel_modulate_3_0, v67    |
+| stream          | variable=v84 depth=2                      | kernel.cpp:415 in pe_kernel_modulate_4_0, v84    |
+| stream          | variable=v85 depth=9                      | kernel.cpp:416 in pe_kernel_modulate_4_0, v85    |
+| stream          | variable=v86 depth=2                      | kernel.cpp:417 in pe_kernel_modulate_4_0, v86    |
+| stream          | variable=v87 depth=9                      | kernel.cpp:418 in pe_kernel_modulate_4_0, v87    |
+| array_partition | variable=v88 complete dim=2               | kernel.cpp:419 in pe_kernel_modulate_4_0, v88    |
+| stream          | variable=v105 depth=2                     | kernel.cpp:454 in pe_kernel_modulate_5_0, v105   |
+| stream          | variable=v106 depth=9                     | kernel.cpp:455 in pe_kernel_modulate_5_0, v106   |
+| stream          | variable=v107 depth=2                     | kernel.cpp:456 in pe_kernel_modulate_5_0, v107   |
+| stream          | variable=v108 depth=9                     | kernel.cpp:457 in pe_kernel_modulate_5_0, v108   |
+| array_partition | variable=v109 complete dim=2              | kernel.cpp:458 in pe_kernel_modulate_5_0, v109   |
+| stream          | variable=v126 depth=2                     | kernel.cpp:493 in pe_kernel_modulate_6_0, v126   |
+| stream          | variable=v127 depth=9                     | kernel.cpp:494 in pe_kernel_modulate_6_0, v127   |
+| stream          | variable=v128 depth=2                     | kernel.cpp:495 in pe_kernel_modulate_6_0, v128   |
+| stream          | variable=v129 depth=9                     | kernel.cpp:496 in pe_kernel_modulate_6_0, v129   |
+| array_partition | variable=v130 complete dim=2              | kernel.cpp:497 in pe_kernel_modulate_6_0, v130   |
+| stream          | variable=v147 depth=2                     | kernel.cpp:532 in pe_kernel_modulate_7_0, v147   |
+| stream          | variable=v148 depth=9                     | kernel.cpp:533 in pe_kernel_modulate_7_0, v148   |
+| stream          | variable=v149 depth=2                     | kernel.cpp:534 in pe_kernel_modulate_7_0, v149   |
+| stream          | variable=v150 depth=9                     | kernel.cpp:535 in pe_kernel_modulate_7_0, v150   |
+| array_partition | variable=v151 complete dim=2              | kernel.cpp:536 in pe_kernel_modulate_7_0, v151   |
+| array_partition | variable=v169 complete dim=2              | kernel.cpp:568 in systolic_tile_modulate, v169   |
+| array_partition | variable=v170 complete dim=2              | kernel.cpp:570 in systolic_tile_modulate, v170   |
+| stream          | variable=A_fifo depth=2                   | kernel.cpp:573 in systolic_tile_modulate, A_fifo |
+| stream          | variable=B_fifo depth=9                   | kernel.cpp:575 in systolic_tile_modulate, B_fifo |
+| array_partition | variable=local_B complete dim=2           | kernel.cpp:647 in systolic_modulate, local_B     |
+| array_partition | variable=local_C complete dim=2           | kernel.cpp:650 in systolic_modulate, local_C     |
+| pipeline        | II=1                                      | kernel.cpp:656 in systolic_modulate              |
+| pipeline        | II=1                                      | kernel.cpp:668 in systolic_modulate              |
+| pipeline        | II=1                                      | kernel.cpp:675 in systolic_modulate              |
+| interface       | m_axi port=v236 offset=slave bundle=gmem0 | kernel.cpp:690 in allo_dditblock, v236           |
+| interface       | m_axi port=v237 offset=slave bundle=gmem1 | kernel.cpp:691 in allo_dditblock, v237           |
+| interface       | m_axi port=v238 offset=slave bundle=gmem2 | kernel.cpp:692 in allo_dditblock, v238           |
+| pipeline        | II=1 rewind                               | kernel.cpp:696 in allo_dditblock                 |
+| pipeline        | II=1 rewind                               | kernel.cpp:704 in allo_dditblock                 |
+| pipeline        | II=1 rewind                               | kernel.cpp:718 in allo_dditblock                 |
++-----------------+-------------------------------------------+--------------------------------------------------+
+
+

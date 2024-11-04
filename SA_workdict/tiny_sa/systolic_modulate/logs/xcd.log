@@ -1,0 +1,264 @@
+Mon Nov  4 21:22:49 2024: Running xcd server. This server was built by gradle.
+Mon Nov  4 21:22:49 2024: Server was asked to start on port: '46707'
+Mon Nov  4 21:22:49 2024: Server is using token UUID: '5a8561c7-e489-4105-bebe-c684aa2c700b'
+Mon Nov  4 21:22:49 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov  4 21:22:49 2024: Attempting to start server on port '46707'
+Mon Nov  4 21:22:49 2024: XCD main fifo: created main fifo '/tmp/xcdmain5a8561c7-e489-4105-bebe-c684aa2c700b', fd read = 13
+Mon Nov  4 21:22:49 2024: Running Dispatch Server
+Mon Nov  4 21:22:49 2024: Version 2.2.0
+Mon Nov  4 21:22:51 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:22:51 2024: Starting Socket connection
+Mon Nov  4 21:22:51 2024: EXCHANGE_TOKEN received, server token: 5a8561c7-e489-4105-bebe-c684aa2c700b, passed token: 5a8561c7-e489-4105-bebe-c684aa2c700b
+Mon Nov  4 21:22:51 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov  4 21:22:51 2024: SESSION_MGR: creating session with session uuid: 'bef21b4e-10e8-4100-90b0-ac85f4473be1' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:22:51 2024: KERNEL_SVC: creating session with uuid: 'bef21b4e-10e8-4100-90b0-ac85f4473be1' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:22:51 2024: GUIDANCE_SMGR: creating guidance session with uuid: 'bef21b4e-10e8-4100-90b0-ac85f4473be1' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:22:51 2024: SYSTEM_DIAGRAM: creating session with uuid: 'bef21b4e-10e8-4100-90b0-ac85f4473be1' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:22:53 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:22:53 2024: Starting Socket connection
+Mon Nov  4 21:22:57 2024: SESSION_MGR: closing session for UUID 'bef21b4e-10e8-4100-90b0-ac85f4473be1' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:22:57 2024: KERNEL_SVC: closing session for UUID 'bef21b4e-10e8-4100-90b0-ac85f4473be1' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:22:57 2024: GUIDANCE_SMGR: closing session for UUID 'bef21b4e-10e8-4100-90b0-ac85f4473be1' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:22:57 2024: SYSTEM_DIAGRAM: closing session for UUID 'bef21b4e-10e8-4100-90b0-ac85f4473be1' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:22:57 2024: STOP_SERVER received, server token: 5a8561c7-e489-4105-bebe-c684aa2c700b, passed token: 5a8561c7-e489-4105-bebe-c684aa2c700b
+Mon Nov  4 21:22:57 2024: Socket received request to stop server.
+Mon Nov  4 21:22:57 2024: Dispatch Server: do_await_stop
+Mon Nov  4 21:22:57 2024: Dispatch Server: stopping mainFifo_
+Mon Nov  4 21:22:57 2024: XCD main fifo: Stopping
+Mon Nov  4 21:22:57 2024: XCD main fifo: do_read error code: Operation canceled
+Mon Nov  4 21:22:57 2024: XCD main fifo: bytes_transferred: 0
+Mon Nov  4 21:22:57 2024: SERVER: destructor for server bound to port 46707
+Mon Nov  4 21:22:57 2024: XCD main fifo: Good unlink of /tmp/xcdmain5a8561c7-e489-4105-bebe-c684aa2c700b
+Mon Nov  4 21:22:57 2024: Server exiting with status 0.
+Mon Nov  4 21:22:57 2024: Closing log file.
+Mon Nov  4 21:23:11 2024: Running xcd server. This server was built by gradle.
+Mon Nov  4 21:23:11 2024: Server was asked to start on port: '39541'
+Mon Nov  4 21:23:11 2024: Server is using token UUID: 'f70febe4-73b9-4516-9de6-4d74edfc2b4e'
+Mon Nov  4 21:23:11 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov  4 21:23:11 2024: Attempting to start server on port '39541'
+Mon Nov  4 21:23:11 2024: XCD main fifo: created main fifo '/tmp/xcdmainf70febe4-73b9-4516-9de6-4d74edfc2b4e', fd read = 13
+Mon Nov  4 21:23:11 2024: Running Dispatch Server
+Mon Nov  4 21:23:11 2024: Version 2.2.0
+Mon Nov  4 21:23:13 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:23:13 2024: Starting Socket connection
+Mon Nov  4 21:23:13 2024: EXCHANGE_TOKEN received, server token: f70febe4-73b9-4516-9de6-4d74edfc2b4e, passed token: f70febe4-73b9-4516-9de6-4d74edfc2b4e
+Mon Nov  4 21:23:13 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov  4 21:23:13 2024: SESSION_MGR: creating session with session uuid: 'b460eb6b-35f4-486c-bef2-099120d92720' and name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:23:13 2024: KERNEL_SVC: creating session with uuid: 'b460eb6b-35f4-486c-bef2-099120d92720' and name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:23:13 2024: GUIDANCE_SMGR: creating guidance session with uuid: 'b460eb6b-35f4-486c-bef2-099120d92720' and name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:23:13 2024: SYSTEM_DIAGRAM: creating session with uuid: 'b460eb6b-35f4-486c-bef2-099120d92720' and name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:23:15 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:23:15 2024: Starting Socket connection
+Mon Nov  4 21:23:34 2024: SESSION_MGR: closing session for UUID 'b460eb6b-35f4-486c-bef2-099120d92720' with name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:23:34 2024: KERNEL_SVC: closing session for UUID 'b460eb6b-35f4-486c-bef2-099120d92720' with name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:23:34 2024: GUIDANCE_SMGR: closing session for UUID 'b460eb6b-35f4-486c-bef2-099120d92720' with name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:23:34 2024: SYSTEM_DIAGRAM: closing session for UUID 'b460eb6b-35f4-486c-bef2-099120d92720' with name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:23:34 2024: STOP_SERVER received, server token: f70febe4-73b9-4516-9de6-4d74edfc2b4e, passed token: f70febe4-73b9-4516-9de6-4d74edfc2b4e
+Mon Nov  4 21:23:34 2024: Socket received request to stop server.
+Mon Nov  4 21:23:34 2024: Dispatch Server: do_await_stop
+Mon Nov  4 21:23:34 2024: Dispatch Server: stopping mainFifo_
+Mon Nov  4 21:23:34 2024: XCD main fifo: Stopping
+Mon Nov  4 21:23:34 2024: XCD main fifo: do_read error code: Operation canceled
+Mon Nov  4 21:23:34 2024: XCD main fifo: bytes_transferred: 0
+Mon Nov  4 21:23:34 2024: SERVER: destructor for server bound to port 39541
+Mon Nov  4 21:23:34 2024: XCD main fifo: Good unlink of /tmp/xcdmainf70febe4-73b9-4516-9de6-4d74edfc2b4e
+Mon Nov  4 21:23:34 2024: Server exiting with status 0.
+Mon Nov  4 21:23:34 2024: Closing log file.
+Mon Nov  4 21:27:45 2024: Running xcd server. This server was built by gradle.
+Mon Nov  4 21:27:45 2024: Server was asked to start on port: '41921'
+Mon Nov  4 21:27:45 2024: Server is using token UUID: '264c5072-5fd2-4dae-8406-2d991529c079'
+Mon Nov  4 21:27:45 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov  4 21:27:45 2024: Attempting to start server on port '41921'
+Mon Nov  4 21:27:45 2024: XCD main fifo: created main fifo '/tmp/xcdmain264c5072-5fd2-4dae-8406-2d991529c079', fd read = 13
+Mon Nov  4 21:27:45 2024: Running Dispatch Server
+Mon Nov  4 21:27:45 2024: Version 2.2.0
+Mon Nov  4 21:27:47 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:27:47 2024: Starting Socket connection
+Mon Nov  4 21:27:47 2024: EXCHANGE_TOKEN received, server token: 264c5072-5fd2-4dae-8406-2d991529c079, passed token: 264c5072-5fd2-4dae-8406-2d991529c079
+Mon Nov  4 21:27:47 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov  4 21:27:47 2024: SESSION_MGR: creating session with session uuid: '8024a5ca-9aa1-4fdd-a047-170f3efece27' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:27:47 2024: KERNEL_SVC: creating session with uuid: '8024a5ca-9aa1-4fdd-a047-170f3efece27' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:27:47 2024: GUIDANCE_SMGR: creating guidance session with uuid: '8024a5ca-9aa1-4fdd-a047-170f3efece27' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:27:47 2024: SYSTEM_DIAGRAM: creating session with uuid: '8024a5ca-9aa1-4fdd-a047-170f3efece27' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:27:49 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:27:49 2024: Starting Socket connection
+Mon Nov  4 21:28:24 2024: SESSION_MGR: closing session for UUID '8024a5ca-9aa1-4fdd-a047-170f3efece27' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:28:24 2024: KERNEL_SVC: closing session for UUID '8024a5ca-9aa1-4fdd-a047-170f3efece27' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:28:24 2024: GUIDANCE_SMGR: closing session for UUID '8024a5ca-9aa1-4fdd-a047-170f3efece27' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:28:24 2024: SYSTEM_DIAGRAM: closing session for UUID '8024a5ca-9aa1-4fdd-a047-170f3efece27' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:28:24 2024: STOP_SERVER received, server token: 264c5072-5fd2-4dae-8406-2d991529c079, passed token: 264c5072-5fd2-4dae-8406-2d991529c079
+Mon Nov  4 21:28:24 2024: Socket received request to stop server.
+Mon Nov  4 21:28:24 2024: Dispatch Server: do_await_stop
+Mon Nov  4 21:28:24 2024: Dispatch Server: stopping mainFifo_
+Mon Nov  4 21:28:24 2024: XCD main fifo: Stopping
+Mon Nov  4 21:28:24 2024: XCD main fifo: do_read error code: Operation canceled
+Mon Nov  4 21:28:24 2024: XCD main fifo: bytes_transferred: 0
+Mon Nov  4 21:28:24 2024: SERVER: destructor for server bound to port 41921
+Mon Nov  4 21:28:24 2024: XCD main fifo: Good unlink of /tmp/xcdmain264c5072-5fd2-4dae-8406-2d991529c079
+Mon Nov  4 21:28:24 2024: Server exiting with status 0.
+Mon Nov  4 21:28:24 2024: Closing log file.
+Mon Nov  4 21:47:06 2024: Running xcd server. This server was built by gradle.
+Mon Nov  4 21:47:06 2024: Server was asked to start on port: '34727'
+Mon Nov  4 21:47:06 2024: Server is using token UUID: '5894b3a8-3e63-4ef5-ae99-4d394bf37d69'
+Mon Nov  4 21:47:06 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov  4 21:47:06 2024: Attempting to start server on port '34727'
+Mon Nov  4 21:47:06 2024: XCD main fifo: created main fifo '/tmp/xcdmain5894b3a8-3e63-4ef5-ae99-4d394bf37d69', fd read = 13
+Mon Nov  4 21:47:06 2024: Running Dispatch Server
+Mon Nov  4 21:47:06 2024: Version 2.2.0
+Mon Nov  4 21:47:08 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:47:08 2024: Starting Socket connection
+Mon Nov  4 21:47:08 2024: EXCHANGE_TOKEN received, server token: 5894b3a8-3e63-4ef5-ae99-4d394bf37d69, passed token: 5894b3a8-3e63-4ef5-ae99-4d394bf37d69
+Mon Nov  4 21:47:08 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov  4 21:47:08 2024: SESSION_MGR: creating session with session uuid: 'ff565e42-3cd5-44f7-9ef3-de5ae6167054' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:08 2024: KERNEL_SVC: creating session with uuid: 'ff565e42-3cd5-44f7-9ef3-de5ae6167054' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:08 2024: GUIDANCE_SMGR: creating guidance session with uuid: 'ff565e42-3cd5-44f7-9ef3-de5ae6167054' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:08 2024: SYSTEM_DIAGRAM: creating session with uuid: 'ff565e42-3cd5-44f7-9ef3-de5ae6167054' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:10 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:47:10 2024: Starting Socket connection
+Mon Nov  4 21:47:13 2024: SESSION_MGR: closing session for UUID 'ff565e42-3cd5-44f7-9ef3-de5ae6167054' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:13 2024: KERNEL_SVC: closing session for UUID 'ff565e42-3cd5-44f7-9ef3-de5ae6167054' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:13 2024: GUIDANCE_SMGR: closing session for UUID 'ff565e42-3cd5-44f7-9ef3-de5ae6167054' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:13 2024: SYSTEM_DIAGRAM: closing session for UUID 'ff565e42-3cd5-44f7-9ef3-de5ae6167054' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:13 2024: STOP_SERVER received, server token: 5894b3a8-3e63-4ef5-ae99-4d394bf37d69, passed token: 5894b3a8-3e63-4ef5-ae99-4d394bf37d69
+Mon Nov  4 21:47:13 2024: Socket received request to stop server.
+Mon Nov  4 21:47:13 2024: Dispatch Server: do_await_stop
+Mon Nov  4 21:47:13 2024: Dispatch Server: stopping mainFifo_
+Mon Nov  4 21:47:13 2024: XCD main fifo: Stopping
+Mon Nov  4 21:47:13 2024: XCD main fifo: do_read error code: Operation canceled
+Mon Nov  4 21:47:13 2024: XCD main fifo: bytes_transferred: 0
+Mon Nov  4 21:47:13 2024: SERVER: destructor for server bound to port 34727
+Mon Nov  4 21:47:13 2024: XCD main fifo: Good unlink of /tmp/xcdmain5894b3a8-3e63-4ef5-ae99-4d394bf37d69
+Mon Nov  4 21:47:13 2024: Server exiting with status 0.
+Mon Nov  4 21:47:13 2024: Closing log file.
+Mon Nov  4 21:47:24 2024: Running xcd server. This server was built by gradle.
+Mon Nov  4 21:47:24 2024: Server was asked to start on port: '46307'
+Mon Nov  4 21:47:24 2024: Server is using token UUID: '9ea4e5da-0324-4b4c-9b46-216f7990bd3a'
+Mon Nov  4 21:47:24 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov  4 21:47:24 2024: Attempting to start server on port '46307'
+Mon Nov  4 21:47:24 2024: XCD main fifo: created main fifo '/tmp/xcdmain9ea4e5da-0324-4b4c-9b46-216f7990bd3a', fd read = 13
+Mon Nov  4 21:47:24 2024: Running Dispatch Server
+Mon Nov  4 21:47:24 2024: Version 2.2.0
+Mon Nov  4 21:47:26 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:47:26 2024: Starting Socket connection
+Mon Nov  4 21:47:26 2024: EXCHANGE_TOKEN received, server token: 9ea4e5da-0324-4b4c-9b46-216f7990bd3a, passed token: 9ea4e5da-0324-4b4c-9b46-216f7990bd3a
+Mon Nov  4 21:47:26 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov  4 21:47:26 2024: SESSION_MGR: creating session with session uuid: '8ff6d85a-1da7-4b39-a75b-8b0ef4df28a4' and name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:47:26 2024: KERNEL_SVC: creating session with uuid: '8ff6d85a-1da7-4b39-a75b-8b0ef4df28a4' and name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:47:26 2024: GUIDANCE_SMGR: creating guidance session with uuid: '8ff6d85a-1da7-4b39-a75b-8b0ef4df28a4' and name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:47:26 2024: SYSTEM_DIAGRAM: creating session with uuid: '8ff6d85a-1da7-4b39-a75b-8b0ef4df28a4' and name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:47:27 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:47:27 2024: Starting Socket connection
+Mon Nov  4 21:47:48 2024: SESSION_MGR: closing session for UUID '8ff6d85a-1da7-4b39-a75b-8b0ef4df28a4' with name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:47:48 2024: KERNEL_SVC: closing session for UUID '8ff6d85a-1da7-4b39-a75b-8b0ef4df28a4' with name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:47:48 2024: GUIDANCE_SMGR: closing session for UUID '8ff6d85a-1da7-4b39-a75b-8b0ef4df28a4' with name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:47:48 2024: SYSTEM_DIAGRAM: closing session for UUID '8ff6d85a-1da7-4b39-a75b-8b0ef4df28a4' with name 'v++_compile_systolic_modulate'
+Mon Nov  4 21:47:48 2024: STOP_SERVER received, server token: 9ea4e5da-0324-4b4c-9b46-216f7990bd3a, passed token: 9ea4e5da-0324-4b4c-9b46-216f7990bd3a
+Mon Nov  4 21:47:48 2024: Socket received request to stop server.
+Mon Nov  4 21:47:48 2024: Dispatch Server: do_await_stop
+Mon Nov  4 21:47:48 2024: Dispatch Server: stopping mainFifo_
+Mon Nov  4 21:47:48 2024: XCD main fifo: Stopping
+Mon Nov  4 21:47:48 2024: XCD main fifo: do_read error code: Operation canceled
+Mon Nov  4 21:47:48 2024: XCD main fifo: bytes_transferred: 0
+Mon Nov  4 21:47:48 2024: SERVER: destructor for server bound to port 46307
+Mon Nov  4 21:47:48 2024: XCD main fifo: Good unlink of /tmp/xcdmain9ea4e5da-0324-4b4c-9b46-216f7990bd3a
+Mon Nov  4 21:47:48 2024: Server exiting with status 0.
+Mon Nov  4 21:47:48 2024: Closing log file.
+Mon Nov  4 21:47:52 2024: Running xcd server. This server was built by gradle.
+Mon Nov  4 21:47:52 2024: Server was asked to start on port: '36407'
+Mon Nov  4 21:47:52 2024: Server is using token UUID: '4e90e192-2794-4884-8863-3bbaf78c4c26'
+Mon Nov  4 21:47:52 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov  4 21:47:52 2024: Attempting to start server on port '36407'
+Mon Nov  4 21:47:52 2024: XCD main fifo: created main fifo '/tmp/xcdmain4e90e192-2794-4884-8863-3bbaf78c4c26', fd read = 13
+Mon Nov  4 21:47:52 2024: Running Dispatch Server
+Mon Nov  4 21:47:52 2024: Version 2.2.0
+Mon Nov  4 21:47:54 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:47:54 2024: Starting Socket connection
+Mon Nov  4 21:47:54 2024: EXCHANGE_TOKEN received, server token: 4e90e192-2794-4884-8863-3bbaf78c4c26, passed token: 4e90e192-2794-4884-8863-3bbaf78c4c26
+Mon Nov  4 21:47:54 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov  4 21:47:54 2024: SESSION_MGR: creating session with session uuid: 'a6ac156a-c9c8-4add-9896-f3719c21478a' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:54 2024: KERNEL_SVC: creating session with uuid: 'a6ac156a-c9c8-4add-9896-f3719c21478a' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:54 2024: GUIDANCE_SMGR: creating guidance session with uuid: 'a6ac156a-c9c8-4add-9896-f3719c21478a' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:54 2024: SYSTEM_DIAGRAM: creating session with uuid: 'a6ac156a-c9c8-4add-9896-f3719c21478a' and name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:47:56 2024: Dispatch Server: Accepted socket connection from client
+Mon Nov  4 21:47:56 2024: Starting Socket connection
+Mon Nov  4 21:48:33 2024: SESSION_MGR: closing session for UUID 'a6ac156a-c9c8-4add-9896-f3719c21478a' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:48:33 2024: KERNEL_SVC: closing session for UUID 'a6ac156a-c9c8-4add-9896-f3719c21478a' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:48:33 2024: GUIDANCE_SMGR: closing session for UUID 'a6ac156a-c9c8-4add-9896-f3719c21478a' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:48:33 2024: SYSTEM_DIAGRAM: closing session for UUID 'a6ac156a-c9c8-4add-9896-f3719c21478a' with name 'vitis-run_compile_systolic_modulate'
+Mon Nov  4 21:48:33 2024: STOP_SERVER received, server token: 4e90e192-2794-4884-8863-3bbaf78c4c26, passed token: 4e90e192-2794-4884-8863-3bbaf78c4c26
+Mon Nov  4 21:48:33 2024: Socket received request to stop server.
+Mon Nov  4 21:48:33 2024: Dispatch Server: do_await_stop
+Mon Nov  4 21:48:33 2024: Dispatch Server: stopping mainFifo_
+Mon Nov  4 21:48:33 2024: XCD main fifo: Stopping
+Mon Nov  4 21:48:33 2024: XCD main fifo: do_read error code: Operation canceled
+Mon Nov  4 21:48:33 2024: XCD main fifo: bytes_transferred: 0
+Mon Nov  4 21:48:33 2024: SERVER: destructor for server bound to port 36407
+Mon Nov  4 21:48:33 2024: XCD main fifo: Good unlink of /tmp/xcdmain4e90e192-2794-4884-8863-3bbaf78c4c26
+Mon Nov  4 21:48:33 2024: Server exiting with status 0.
+Mon Nov  4 21:48:33 2024: Closing log file.
+Tue Nov  5 00:41:32 2024: Running xcd server. This server was built by gradle.
+Tue Nov  5 00:41:32 2024: Server was asked to start on port: '45081'
+Tue Nov  5 00:41:32 2024: Server is using token UUID: '8ec16d09-5d7f-41ff-92db-9d9141c38f86'
+Tue Nov  5 00:41:32 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Tue Nov  5 00:41:32 2024: Attempting to start server on port '45081'
+Tue Nov  5 00:41:32 2024: XCD main fifo: created main fifo '/tmp/xcdmain8ec16d09-5d7f-41ff-92db-9d9141c38f86', fd read = 13
+Tue Nov  5 00:41:32 2024: Running Dispatch Server
+Tue Nov  5 00:41:32 2024: Version 2.2.0
+Tue Nov  5 00:41:34 2024: Dispatch Server: Accepted socket connection from client
+Tue Nov  5 00:41:34 2024: Starting Socket connection
+Tue Nov  5 00:41:34 2024: EXCHANGE_TOKEN received, server token: 8ec16d09-5d7f-41ff-92db-9d9141c38f86, passed token: 8ec16d09-5d7f-41ff-92db-9d9141c38f86
+Tue Nov  5 00:41:34 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Tue Nov  5 00:41:34 2024: SESSION_MGR: creating session with session uuid: '82cb804b-9bdd-4d36-9324-03708f4c608e' and name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:34 2024: KERNEL_SVC: creating session with uuid: '82cb804b-9bdd-4d36-9324-03708f4c608e' and name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:34 2024: GUIDANCE_SMGR: creating guidance session with uuid: '82cb804b-9bdd-4d36-9324-03708f4c608e' and name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:34 2024: SYSTEM_DIAGRAM: creating session with uuid: '82cb804b-9bdd-4d36-9324-03708f4c608e' and name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:37 2024: Dispatch Server: Accepted socket connection from client
+Tue Nov  5 00:41:37 2024: Starting Socket connection
+Tue Nov  5 00:41:40 2024: SESSION_MGR: closing session for UUID '82cb804b-9bdd-4d36-9324-03708f4c608e' with name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:40 2024: KERNEL_SVC: closing session for UUID '82cb804b-9bdd-4d36-9324-03708f4c608e' with name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:40 2024: GUIDANCE_SMGR: closing session for UUID '82cb804b-9bdd-4d36-9324-03708f4c608e' with name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:40 2024: SYSTEM_DIAGRAM: closing session for UUID '82cb804b-9bdd-4d36-9324-03708f4c608e' with name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:40 2024: STOP_SERVER received, server token: 8ec16d09-5d7f-41ff-92db-9d9141c38f86, passed token: 8ec16d09-5d7f-41ff-92db-9d9141c38f86
+Tue Nov  5 00:41:40 2024: Socket received request to stop server.
+Tue Nov  5 00:41:40 2024: Dispatch Server: do_await_stop
+Tue Nov  5 00:41:40 2024: Dispatch Server: stopping mainFifo_
+Tue Nov  5 00:41:40 2024: XCD main fifo: Stopping
+Tue Nov  5 00:41:40 2024: XCD main fifo: do_read error code: Operation canceled
+Tue Nov  5 00:41:40 2024: XCD main fifo: bytes_transferred: 0
+Tue Nov  5 00:41:40 2024: SERVER: destructor for server bound to port 45081
+Tue Nov  5 00:41:40 2024: XCD main fifo: Good unlink of /tmp/xcdmain8ec16d09-5d7f-41ff-92db-9d9141c38f86
+Tue Nov  5 00:41:40 2024: Server exiting with status 0.
+Tue Nov  5 00:41:40 2024: Closing log file.
+Tue Nov  5 00:41:50 2024: Running xcd server. This server was built by gradle.
+Tue Nov  5 00:41:50 2024: Server was asked to start on port: '38221'
+Tue Nov  5 00:41:50 2024: Server is using token UUID: 'ab0cc479-c0ae-4986-819b-31b908fd96bb'
+Tue Nov  5 00:41:50 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Tue Nov  5 00:41:50 2024: Attempting to start server on port '38221'
+Tue Nov  5 00:41:50 2024: XCD main fifo: created main fifo '/tmp/xcdmainab0cc479-c0ae-4986-819b-31b908fd96bb', fd read = 13
+Tue Nov  5 00:41:50 2024: Running Dispatch Server
+Tue Nov  5 00:41:50 2024: Version 2.2.0
+Tue Nov  5 00:41:52 2024: Dispatch Server: Accepted socket connection from client
+Tue Nov  5 00:41:52 2024: Starting Socket connection
+Tue Nov  5 00:41:52 2024: EXCHANGE_TOKEN received, server token: ab0cc479-c0ae-4986-819b-31b908fd96bb, passed token: ab0cc479-c0ae-4986-819b-31b908fd96bb
+Tue Nov  5 00:41:52 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Tue Nov  5 00:41:52 2024: SESSION_MGR: creating session with session uuid: '1ee59ee2-cd09-44e0-a39e-9caca6ac192d' and name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:52 2024: KERNEL_SVC: creating session with uuid: '1ee59ee2-cd09-44e0-a39e-9caca6ac192d' and name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:52 2024: GUIDANCE_SMGR: creating guidance session with uuid: '1ee59ee2-cd09-44e0-a39e-9caca6ac192d' and name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:52 2024: SYSTEM_DIAGRAM: creating session with uuid: '1ee59ee2-cd09-44e0-a39e-9caca6ac192d' and name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:41:54 2024: Dispatch Server: Accepted socket connection from client
+Tue Nov  5 00:41:54 2024: Starting Socket connection
+Tue Nov  5 00:42:33 2024: SESSION_MGR: closing session for UUID '1ee59ee2-cd09-44e0-a39e-9caca6ac192d' with name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:42:33 2024: KERNEL_SVC: closing session for UUID '1ee59ee2-cd09-44e0-a39e-9caca6ac192d' with name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:42:33 2024: GUIDANCE_SMGR: closing session for UUID '1ee59ee2-cd09-44e0-a39e-9caca6ac192d' with name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:42:33 2024: SYSTEM_DIAGRAM: closing session for UUID '1ee59ee2-cd09-44e0-a39e-9caca6ac192d' with name 'vitis-run_compile_systolic_modulate'
+Tue Nov  5 00:42:33 2024: STOP_SERVER received, server token: ab0cc479-c0ae-4986-819b-31b908fd96bb, passed token: ab0cc479-c0ae-4986-819b-31b908fd96bb
+Tue Nov  5 00:42:33 2024: Socket received request to stop server.
+Tue Nov  5 00:42:33 2024: Dispatch Server: do_await_stop
+Tue Nov  5 00:42:33 2024: Dispatch Server: stopping mainFifo_
+Tue Nov  5 00:42:33 2024: XCD main fifo: Stopping
+Tue Nov  5 00:42:33 2024: XCD main fifo: do_read error code: Operation canceled
+Tue Nov  5 00:42:33 2024: XCD main fifo: bytes_transferred: 0
+Tue Nov  5 00:42:33 2024: SERVER: destructor for server bound to port 38221
+Tue Nov  5 00:42:33 2024: XCD main fifo: Good unlink of /tmp/xcdmainab0cc479-c0ae-4986-819b-31b908fd96bb
+Tue Nov  5 00:42:33 2024: Server exiting with status 0.
+Tue Nov  5 00:42:33 2024: Closing log file.

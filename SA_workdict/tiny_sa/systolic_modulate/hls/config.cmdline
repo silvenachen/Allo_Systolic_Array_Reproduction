@@ -1,0 +1,3 @@
+relativeroot=/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa
+original_argv=--mode hls --cosim --config /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg --work_dir systolic_modulate 
+

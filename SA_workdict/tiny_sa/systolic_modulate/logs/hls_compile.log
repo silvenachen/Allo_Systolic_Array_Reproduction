@@ -1,0 +1,631 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/systolic_modulate.hlscompile_summary, at Mon Nov  4 21:47:26 2024
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate -config /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg -cmdlineconfig /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'silvenchen' on host 'silvenchen-ASUS-TUF-Gaming-F15-FX507ZM-FX507ZM' (Linux_x86_64 version 5.19.0-32-generic) on Mon Nov 04 21:47:27 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa'
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate 
+INFO: [HLS 200-1510] Running: open_project /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.cpp' at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=kernel.h' at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_sa.cpp' at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/tb_sa.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=systolic_modulate' at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xcu280-fsvh2892-2L-e' at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcu280-fsvh2892-2L-e'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg(5)
+INFO: [HLS 200-1510] Running: apply_ini /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/config.cmdline
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 634.254 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:567:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:673:30)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:673:39)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:673:48)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:654:9)
+Resolution: For help on HLS 214-114 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 5 issue(s) in file /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 10.29 seconds. CPU system time: 0.55 seconds. Elapsed time: 10.87 seconds; current allocated memory: 641.207 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,104 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 484 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 404 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 394 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 394 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 589 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 520 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 520 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 517 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 525 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 517 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 517 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 517 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 517 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 647 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 702 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'l_ai' is marked as complete unroll implied by the pipeline pragma (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:657:8)
+INFO: [HLS 214-291] Loop 'l_si' is marked as complete unroll implied by the pipeline pragma (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:676:8)
+INFO: [HLS 214-186] Unrolling loop 'l_ai' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:657:8) in function 'systolic_modulate' completely with a factor of 1 (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+INFO: [HLS 214-186] Unrolling loop 'l_si' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:676:8) in function 'systolic_modulate' completely with a factor of 1 (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+INFO: [HLS 214-248] Applying array_partition to 'A_fifo': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572:23)
+INFO: [HLS 214-248] Applying array_partition to 'B_fifo': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574:23)
+INFO: [HLS 214-248] Applying array_partition to 'local_B': Complete partitioning on dimension 2. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646:9)
+INFO: [HLS 214-248] Applying array_partition to 'local_C': Complete partitioning on dimension 2. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649:8)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_k_0_k7> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:540:15 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_k_0_k6> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:501:15 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_k_0_k5> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:462:15 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_k_0_k4> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:423:15 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_k_0_k3> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:384:15 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_k_0_k2> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:345:15 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_k_0_k1> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:306:15 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_k_0_k> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:267:14 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_n_1_n> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:583:16 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< l_S_n_5_n1> at /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:633:17 
+WARNING: [HLS 214-397] Localizing array 'local_A' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_B_0' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_B_1' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_B_2' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_B_3' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_B_4' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_B_5' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_B_6' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_B_7' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_C_0' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_C_1' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_C_2' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_C_3' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_C_4' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_C_5' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_C_6' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+WARNING: [HLS 214-397] Localizing array 'local_C_7' into loop 'l_ni' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11) by ignoring loop-carried dependences. (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:644:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.5 seconds. CPU system time: 0.23 seconds. Elapsed time: 6.38 seconds; current allocated memory: 642.508 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 642.508 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 643.340 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 644.406 MB.
+INFO: [XFORM 203-102] Partitioning array 'local_A' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:645) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'local_C' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649) automatically.
+INFO: [XFORM 203-102] Partitioning array 'local_C.1' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649) automatically.
+INFO: [XFORM 203-102] Partitioning array 'local_C.2' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649) automatically.
+INFO: [XFORM 203-102] Partitioning array 'local_C.3' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649) automatically.
+INFO: [XFORM 203-102] Partitioning array 'local_C_3' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649) automatically.
+INFO: [XFORM 203-102] Partitioning array 'local_C_2' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649) automatically.
+INFO: [XFORM 203-102] Partitioning array 'local_C_1' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649) automatically.
+INFO: [XFORM 203-102] Partitioning array 'local_C.4' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649) automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_l_data_load_k8_proc' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:578) to a process function for dataflow in function 'systolic_tile_modulate'.
+INFO: [XFORM 203-721] Changing loop 'Loop_l_data_drain_k9_proc' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:628) to a process function for dataflow in function 'systolic_tile_modulate'.
+INFO: [XFORM 203-721] Changing loop 'Loop_l_load_A_tile_ak_proc' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:655) to a process function for dataflow in function 'dataflow_in_loop_l_ni.1'.
+INFO: [XFORM 203-721] Changing loop 'Loop_l_load_B_tile_bk_proc' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:666) to a process function for dataflow in function 'dataflow_in_loop_l_ni.1'.
+INFO: [XFORM 203-721] Changing loop 'Loop_l_store_C_tile_sj_proc' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:674) to a process function for dataflow in function 'dataflow_in_loop_l_ni.1'.
+INFO: [XFORM 203-712] Applying dataflow to function 'systolic_tile_modulate' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:567:1), detected/extracted 10 process function(s): 
+	 'systolic_tile_modulate_Loop_l_data_load_k8_proc21'
+	 'PE_kernel_modulate_0_0.1'
+	 'PE_kernel_modulate_1_0.1'
+	 'PE_kernel_modulate_2_0.1'
+	 'PE_kernel_modulate_3_0.1'
+	 'PE_kernel_modulate_4_0.1'
+	 'PE_kernel_modulate_5_0.1'
+	 'PE_kernel_modulate_6_0.1'
+	 'PE_kernel_modulate_7_0.1'
+	 'systolic_tile_modulate_Loop_l_data_drain_k9_proc22'.
+INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_l_ni.1' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:645:7), detected/extracted 4 process function(s): 
+	 'dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc'
+	 'dataflow_in_loop_l_ni.1_Loop_l_load_B_tile_bk_proc'
+	 'systolic_tile_modulate'
+	 'dataflow_in_loop_l_ni.1_Loop_l_store_C_tile_sj_proc'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 667.773 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'l_data_load_k8'(/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:578:19) and 'l_S_n_1_n'(/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:583:16) in function 'systolic_tile_modulate_Loop_l_data_load_k8_proc21' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'l_data_drain_k9'(/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:628:20) and 'l_S_n_5_n1'(/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:633:17) in function 'systolic_tile_modulate_Loop_l_data_drain_k9_proc22' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'l_load_B_tile_bk'(/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:666:25) and 'l_bj'(/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:667:15) in function 'dataflow_in_loop_l_ni.1_Loop_l_load_B_tile_bk_proc' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'l_data_load_k8' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:578:19) in function 'systolic_tile_modulate_Loop_l_data_load_k8_proc21'.
+INFO: [XFORM 203-541] Flattening a loop nest 'l_data_drain_k9' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:628:20) in function 'systolic_tile_modulate_Loop_l_data_drain_k9_proc22'.
+INFO: [XFORM 203-541] Flattening a loop nest 'l_load_B_tile_bk' (/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:666:25) in function 'dataflow_in_loop_l_ni.1_Loop_l_load_B_tile_bk_proc'.
+WARNING: [HLS 200-1450] Process PE_kernel_modulate_0_0.1 has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1450] Process PE_kernel_modulate_1_0.1 has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1450] Process PE_kernel_modulate_2_0.1 has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1450] Process PE_kernel_modulate_3_0.1 has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1450] Process PE_kernel_modulate_4_0.1 has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1450] Process PE_kernel_modulate_5_0.1 has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1450] Process PE_kernel_modulate_6_0.1 has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1450] Process PE_kernel_modulate_7_0.1 has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+WARNING: [HLS 200-1449] Process dataflow_in_loop_l_ni.1 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 825.164 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'systolic_modulate' ...
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak' to 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc' to 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_l_ni.1_Loop_l_load_B_tile_bk_proc' to 'dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc'.
+WARNING: [SYN 201-103] Legalizing function name 'PE_kernel_modulate_0_0.1' to 'PE_kernel_modulate_0_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'PE_kernel_modulate_1_0.1' to 'PE_kernel_modulate_1_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'PE_kernel_modulate_2_0.1' to 'PE_kernel_modulate_2_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'PE_kernel_modulate_3_0.1' to 'PE_kernel_modulate_3_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'PE_kernel_modulate_4_0.1' to 'PE_kernel_modulate_4_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'PE_kernel_modulate_5_0.1' to 'PE_kernel_modulate_5_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'PE_kernel_modulate_6_0.1' to 'PE_kernel_modulate_6_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'PE_kernel_modulate_7_0.1' to 'PE_kernel_modulate_7_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_l_ni.1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj' to 'dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_l_ni.1_Loop_l_store_C_tile_sj_proc' to 'dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc'.
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_l_ni.1' to 'dataflow_in_loop_l_ni_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_load_A_tile_ak'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'l_load_A_tile_ak'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 826.762 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 826.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 826.910 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 826.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_load_B_tile_bk_l_bj'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'l_load_B_tile_bk_l_bj'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 827.500 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 827.500 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'systolic_tile_modulate_Loop_l_data_load_k8_proc21' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_data_load_k8_l_S_n_1_n'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'l_data_load_k8_l_S_n_1_n'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 828.680 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 828.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_kernel_modulate_0_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k'.
+WARNING: [HLS 200-880] The II Violation in module 'PE_kernel_modulate_0_0_1' (loop 'l_S_k_0_k'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('v16_write_ln277', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:277) of variable 'v17', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:278 on local variable 'v16', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:277 and 'load' operation 32 bit ('v16_load_1', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:278) on local variable 'v16', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:277.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 6, loop 'l_S_k_0_k'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 828.898 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 828.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_kernel_modulate_1_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k1'.
+WARNING: [HLS 200-880] The II Violation in module 'PE_kernel_modulate_1_0_1' (loop 'l_S_k_0_k1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('v37_write_ln316', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:316) of variable 'v38', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:317 on local variable 'v37', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:316 and 'load' operation 32 bit ('v37_load_1', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:317) on local variable 'v37', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:316.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 6, loop 'l_S_k_0_k1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 829.184 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 829.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_kernel_modulate_2_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k2'.
+WARNING: [HLS 200-880] The II Violation in module 'PE_kernel_modulate_2_0_1' (loop 'l_S_k_0_k2'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('v58_write_ln355', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:355) of variable 'v59', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:356 on local variable 'v58', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:355 and 'load' operation 32 bit ('v58_load_1', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:356) on local variable 'v58', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:355.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 6, loop 'l_S_k_0_k2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 829.605 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 829.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_kernel_modulate_3_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k3'.
+WARNING: [HLS 200-880] The II Violation in module 'PE_kernel_modulate_3_0_1' (loop 'l_S_k_0_k3'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('v79_write_ln394', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:394) of variable 'v80', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:395 on local variable 'v79', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:394 and 'load' operation 32 bit ('v79_load_1', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:395) on local variable 'v79', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:394.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 6, loop 'l_S_k_0_k3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 829.938 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 829.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_kernel_modulate_4_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k4'.
+WARNING: [HLS 200-880] The II Violation in module 'PE_kernel_modulate_4_0_1' (loop 'l_S_k_0_k4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('v100_write_ln433', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:433) of variable 'v101', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:434 on local variable 'v100', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:433 and 'load' operation 32 bit ('v100_load_1', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:434) on local variable 'v100', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:433.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 6, loop 'l_S_k_0_k4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 830.297 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 830.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_kernel_modulate_5_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k5'.
+WARNING: [HLS 200-880] The II Violation in module 'PE_kernel_modulate_5_0_1' (loop 'l_S_k_0_k5'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('v121_write_ln472', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:472) of variable 'v122', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:473 on local variable 'v121', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:472 and 'load' operation 32 bit ('v121_load_1', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:473) on local variable 'v121', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:472.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 6, loop 'l_S_k_0_k5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 830.672 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 830.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_kernel_modulate_6_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k6'.
+WARNING: [HLS 200-880] The II Violation in module 'PE_kernel_modulate_6_0_1' (loop 'l_S_k_0_k6'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('v142_write_ln511', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:511) of variable 'v143', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:512 on local variable 'v142', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:511 and 'load' operation 32 bit ('v142_load_1', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:512) on local variable 'v142', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:511.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 6, loop 'l_S_k_0_k6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 831.152 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 831.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'PE_kernel_modulate_7_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_S_k_0_k7'.
+WARNING: [HLS 200-880] The II Violation in module 'PE_kernel_modulate_7_0_1' (loop 'l_S_k_0_k7'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation 0 bit ('v163_write_ln550', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:550) of variable 'v164', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:551 on local variable 'v163', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:550 and 'load' operation 32 bit ('v163_load_1', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:551) on local variable 'v163', /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:550.
+Resolution: For help on HLS 200-880 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 6, loop 'l_S_k_0_k7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 831.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 831.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'systolic_tile_modulate_Loop_l_data_drain_k9_proc22' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_data_drain_k9_l_S_n_5_n1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'l_data_drain_k9_l_S_n_5_n1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 831.848 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 831.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'systolic_tile_modulate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_PE_kernel_modulate_1_0_1_U0 (from systolic_tile_modulate_Loop_l_data_load_k8_proc21_U0 to PE_kernel_modulate_1_0_1_U0) to 3 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_PE_kernel_modulate_2_0_1_U0 (from systolic_tile_modulate_Loop_l_data_load_k8_proc21_U0 to PE_kernel_modulate_2_0_1_U0) to 4 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_PE_kernel_modulate_3_0_1_U0 (from systolic_tile_modulate_Loop_l_data_load_k8_proc21_U0 to PE_kernel_modulate_3_0_1_U0) to 5 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_PE_kernel_modulate_4_0_1_U0 (from systolic_tile_modulate_Loop_l_data_load_k8_proc21_U0 to PE_kernel_modulate_4_0_1_U0) to 6 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_PE_kernel_modulate_5_0_1_U0 (from systolic_tile_modulate_Loop_l_data_load_k8_proc21_U0 to PE_kernel_modulate_5_0_1_U0) to 7 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_PE_kernel_modulate_6_0_1_U0 (from systolic_tile_modulate_Loop_l_data_load_k8_proc21_U0 to PE_kernel_modulate_6_0_1_U0) to 8 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_PE_kernel_modulate_7_0_1_U0 (from systolic_tile_modulate_Loop_l_data_load_k8_proc21_U0 to PE_kernel_modulate_7_0_1_U0) to 9 to improve performance and/or avoid deadlocks.
+WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_systolic_tile_modulate_Loop_l_data_drain_k9_proc22_U0 (from PE_kernel_modulate_0_0_1_U0 to systolic_tile_modulate_Loop_l_data_drain_k9_proc22_U0) to 9 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 832.438 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 832.438 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'l_store_C_tile_sj'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'l_store_C_tile_sj'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 833.285 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 833.285 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 833.285 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 833.285 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_l_ni_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 833.285 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 833.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'systolic_modulate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 834.191 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 834.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak' pipeline 'l_load_A_tile_ak' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 834.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 834.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc' pipeline 'l_load_B_tile_bk_l_bj' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 835.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'systolic_tile_modulate_Loop_l_data_load_k8_proc21' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'systolic_tile_modulate_Loop_l_data_load_k8_proc21' pipeline 'l_data_load_k8_l_S_n_1_n' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'systolic_tile_modulate_Loop_l_data_load_k8_proc21'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 837.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_kernel_modulate_0_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_kernel_modulate_0_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 839.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_kernel_modulate_1_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_kernel_modulate_1_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 840.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_kernel_modulate_2_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_kernel_modulate_2_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 841.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_kernel_modulate_3_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_kernel_modulate_3_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 842.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_kernel_modulate_4_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_kernel_modulate_4_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 843.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_kernel_modulate_5_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_kernel_modulate_5_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 844.668 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_kernel_modulate_6_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_kernel_modulate_6_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 845.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'PE_kernel_modulate_7_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'PE_kernel_modulate_7_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 846.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'systolic_tile_modulate_Loop_l_data_drain_k9_proc22' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'systolic_tile_modulate_Loop_l_data_drain_k9_proc22' pipeline 'l_data_drain_k9_l_S_n_5_n1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'systolic_tile_modulate_Loop_l_data_drain_k9_proc22'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 847.871 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'systolic_tile_modulate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [HLS 200-656] Deadlocks can occur since process systolic_tile_modulate_Loop_l_data_load_k8_proc21 is instantiated in a dataflow region with ap_ctrl_none or without start propagation and contains an auto-rewind pipeline.
+Resolution: For help on HLS 200-656 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-656.html
+INFO: [RTGEN 206-100] Finished creating RTL model for 'systolic_tile_modulate'.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_2_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_4_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_6_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_8_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_10_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_12_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_14_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_1_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_1_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_2_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_3_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_3_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_5_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_4_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_7_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_5_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_9_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_6_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_11_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_7_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_13_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'A_fifo_8_U(systolic_modulate_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'B_fifo_15_U(systolic_modulate_fifo_w32_d9_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_kernel_modulate_0_0_1_U0_U(systolic_modulate_start_for_PE_kernel_modulate_0_0_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_kernel_modulate_1_0_1_U0_U(systolic_modulate_start_for_PE_kernel_modulate_1_0_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_kernel_modulate_2_0_1_U0_U(systolic_modulate_start_for_PE_kernel_modulate_2_0_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_kernel_modulate_3_0_1_U0_U(systolic_modulate_start_for_PE_kernel_modulate_3_0_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_kernel_modulate_4_0_1_U0_U(systolic_modulate_start_for_PE_kernel_modulate_4_0_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_kernel_modulate_5_0_1_U0_U(systolic_modulate_start_for_PE_kernel_modulate_5_0_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_kernel_modulate_6_0_1_U0_U(systolic_modulate_start_for_PE_kernel_modulate_6_0_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_PE_kernel_modulate_7_0_1_U0_U(systolic_modulate_start_for_PE_kernel_modulate_7_0_1_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_systolic_tile_modulate_Loop_l_data_drain_k9_proc22_U0_U(systolic_modulate_start_for_systolic_tile_modulate_Loop_l_data_drain_k9_proc22_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 851.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 853.137 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 854.039 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_l_ni_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [HLS 200-656] Deadlocks can occur since process dataflow_in_loop_l_ni.1_Loop_l_load_B_tile_bk_proc is instantiated in a dataflow region with ap_ctrl_none or without start propagation and contains an auto-rewind pipeline.
+Resolution: For help on HLS 200-656 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-656.html
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d2_S' is changed to 'fifo_w32_d2_S_x' due to conflict.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_l_ni_1'.
+INFO: [HLS 200-741] Implementing PIPO systolic_modulate_dataflow_in_loop_l_ni_1_local_B_RAM_AUTO_1R1W using a single memory for all blocks
+INFO: [RTMG 210-278] Implementing memory 'systolic_modulate_dataflow_in_loop_l_ni_1_local_B_RAM_AUTO_1R1W_memcore' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'indvars_iv26_c_U(systolic_modulate_fifo_w5_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_C_0_7_U(systolic_modulate_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_C_0_6_U(systolic_modulate_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_C_0_5_U(systolic_modulate_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_C_0_4_U(systolic_modulate_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_C_0_3_U(systolic_modulate_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_C_0_2_U(systolic_modulate_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_C_0_1_U(systolic_modulate_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'local_C_0_U(systolic_modulate_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 856.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'systolic_modulate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'systolic_modulate/v217' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'systolic_modulate/v218' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'systolic_modulate/v219' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'systolic_modulate' to 'ap_ctrl_hs'.
+WARNING: [HLS 200-656] Deadlocks can occur since process dataflow_in_loop_l_ni.1_Loop_l_load_B_tile_bk_proc is instantiated in a dataflow region with ap_ctrl_none or without start propagation and contains an auto-rewind pipeline.
+Resolution: For help on HLS 200-656 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-656.html
+INFO: [RTGEN 206-100] Finished creating RTL model for 'systolic_modulate'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 857.762 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.17 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 859.988 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.52 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.53 seconds; current allocated memory: 867.848 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for systolic_modulate.
+INFO: [VLOG 209-307] Generating Verilog RTL for systolic_modulate.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.00 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 14.56 seconds. CPU system time: 0.95 seconds. Elapsed time: 20.2 seconds; current allocated memory: 234.723 MB.
+INFO: [HLS 200-1510] Running: close_project 
+INFO: [HLS 200-112] Total CPU user time: 15.68 seconds. Total CPU system time: 1.05 seconds. Total elapsed time: 21.31 seconds; peak allocated memory: 868.977 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Mon Nov  4 21:47:48 2024...
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 24s

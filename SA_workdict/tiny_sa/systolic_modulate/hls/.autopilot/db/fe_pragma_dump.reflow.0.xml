@@ -1,0 +1,65 @@
+<pragmas>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="259" pragmaType="stream" parentfunction="PE_kernel_modulate_0_0" depth="2" type="fifo" variable="v0"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="260" pragmaType="stream" parentfunction="PE_kernel_modulate_0_0" depth="9" type="fifo" variable="v1"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="261" pragmaType="stream" parentfunction="PE_kernel_modulate_0_0" depth="2" type="fifo" variable="v2"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="262" pragmaType="stream" parentfunction="PE_kernel_modulate_0_0" depth="9" type="fifo" variable="v3"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="263" pragmaType="array_partition" parentfunction="PE_kernel_modulate_0_0" dim="2" factor="0" mode="complete" dynamic="0" variable="v4"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDq33_i" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="654" pragmaType="dataflow" parentfunction="systolic_modulate" disable_start_propagation="0"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="656" pragmaType="pipeline" parentfunction="systolic_modulate" off="0" ii="1" rewind="0" style=""/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="675" pragmaType="pipeline" parentfunction="systolic_modulate" off="0" ii="1" rewind="0" style=""/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="668" pragmaType="pipeline" parentfunction="systolic_modulate" off="0" ii="1" rewind="0" style=""/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="647" pragmaType="array_partition" parentfunction="systolic_modulate" dim="2" factor="0" mode="complete" dynamic="0" variable="local_B"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="650" pragmaType="array_partition" parentfunction="systolic_modulate" dim="2" factor="0" mode="complete" dynamic="0" variable="local_C"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator==<33, true>(ap_int_base<33, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="567" pragmaType="dataflow" parentfunction="systolic_tile_modulate" disable_start_propagation="0"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="568" pragmaType="array_partition" parentfunction="systolic_tile_modulate" dim="2" factor="0" mode="complete" dynamic="0" variable="v169"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="570" pragmaType="array_partition" parentfunction="systolic_tile_modulate" dim="2" factor="0" mode="complete" dynamic="0" variable="v170"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="573" pragmaType="stream" parentfunction="systolic_tile_modulate" depth="2" type="fifo" variable="A_fifo"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="575" pragmaType="stream" parentfunction="systolic_tile_modulate" depth="9" type="fifo" variable="B_fifo"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="454" pragmaType="stream" parentfunction="PE_kernel_modulate_5_0" depth="2" type="fifo" variable="v105"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="455" pragmaType="stream" parentfunction="PE_kernel_modulate_5_0" depth="9" type="fifo" variable="v106"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="456" pragmaType="stream" parentfunction="PE_kernel_modulate_5_0" depth="2" type="fifo" variable="v107"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="457" pragmaType="stream" parentfunction="PE_kernel_modulate_5_0" depth="9" type="fifo" variable="v108"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="458" pragmaType="array_partition" parentfunction="PE_kernel_modulate_5_0" dim="2" factor="0" mode="complete" dynamic="0" variable="v109"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<33, true>::operator==<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="493" pragmaType="stream" parentfunction="PE_kernel_modulate_6_0" depth="2" type="fifo" variable="v126"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="494" pragmaType="stream" parentfunction="PE_kernel_modulate_6_0" depth="9" type="fifo" variable="v127"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="495" pragmaType="stream" parentfunction="PE_kernel_modulate_6_0" depth="2" type="fifo" variable="v128"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="496" pragmaType="stream" parentfunction="PE_kernel_modulate_6_0" depth="9" type="fifo" variable="v129"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="497" pragmaType="array_partition" parentfunction="PE_kernel_modulate_6_0" dim="2" factor="0" mode="complete" dynamic="0" variable="v130"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="532" pragmaType="stream" parentfunction="PE_kernel_modulate_7_0" depth="2" type="fifo" variable="v147"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="533" pragmaType="stream" parentfunction="PE_kernel_modulate_7_0" depth="9" type="fifo" variable="v148"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="534" pragmaType="stream" parentfunction="PE_kernel_modulate_7_0" depth="2" type="fifo" variable="v149"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="535" pragmaType="stream" parentfunction="PE_kernel_modulate_7_0" depth="9" type="fifo" variable="v150"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="536" pragmaType="array_partition" parentfunction="PE_kernel_modulate_7_0" dim="2" factor="0" mode="complete" dynamic="0" variable="v151"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="337" pragmaType="stream" parentfunction="PE_kernel_modulate_2_0" depth="2" type="fifo" variable="v42"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="338" pragmaType="stream" parentfunction="PE_kernel_modulate_2_0" depth="9" type="fifo" variable="v43"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="339" pragmaType="stream" parentfunction="PE_kernel_modulate_2_0" depth="2" type="fifo" variable="v44"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="340" pragmaType="stream" parentfunction="PE_kernel_modulate_2_0" depth="9" type="fifo" variable="v45"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="341" pragmaType="array_partition" parentfunction="PE_kernel_modulate_2_0" dim="2" factor="0" mode="complete" dynamic="0" variable="v46"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="376" pragmaType="stream" parentfunction="PE_kernel_modulate_3_0" depth="2" type="fifo" variable="v63"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="377" pragmaType="stream" parentfunction="PE_kernel_modulate_3_0" depth="9" type="fifo" variable="v64"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="378" pragmaType="stream" parentfunction="PE_kernel_modulate_3_0" depth="2" type="fifo" variable="v65"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="379" pragmaType="stream" parentfunction="PE_kernel_modulate_3_0" depth="9" type="fifo" variable="v66"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="380" pragmaType="array_partition" parentfunction="PE_kernel_modulate_3_0" dim="2" factor="0" mode="complete" dynamic="0" variable="v67"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="415" pragmaType="stream" parentfunction="PE_kernel_modulate_4_0" depth="2" type="fifo" variable="v84"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="416" pragmaType="stream" parentfunction="PE_kernel_modulate_4_0" depth="9" type="fifo" variable="v85"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="417" pragmaType="stream" parentfunction="PE_kernel_modulate_4_0" depth="2" type="fifo" variable="v86"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="418" pragmaType="stream" parentfunction="PE_kernel_modulate_4_0" depth="9" type="fifo" variable="v87"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="419" pragmaType="array_partition" parentfunction="PE_kernel_modulate_4_0" dim="2" factor="0" mode="complete" dynamic="0" variable="v88"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="298" pragmaType="stream" parentfunction="PE_kernel_modulate_1_0" depth="2" type="fifo" variable="v21"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="299" pragmaType="stream" parentfunction="PE_kernel_modulate_1_0" depth="9" type="fifo" variable="v22"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="300" pragmaType="stream" parentfunction="PE_kernel_modulate_1_0" depth="2" type="fifo" variable="v23"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="301" pragmaType="stream" parentfunction="PE_kernel_modulate_1_0" depth="9" type="fifo" variable="v24"/>
+<pragma file="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp" line="302" pragmaType="array_partition" parentfunction="PE_kernel_modulate_1_0" dim="2" factor="0" mode="complete" dynamic="0" variable="v25"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<float, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+</pragmas>

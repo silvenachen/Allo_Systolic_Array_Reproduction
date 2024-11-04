@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/systolic_modulate.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov  4 21:47:26 2024",
+ "timestampMillis": "1730728046121",
+ "buildStep": {
+  "cmdId": "22b7a280-7bd1-4021-9818-359c9c67ae3a",
+  "name": "v++",
+  "logFile": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/logs/systolic_modulate.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg --work_dir systolic_modulate ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg",
+   "--work_dir",
+   "systolic_modulate"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/hls_config.cfg",
+    "content": "part=xcu280-fsvh2892-2L-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=systolic_modulate\nclock=10ns\nsyn.file=kernel.cpp\nsyn.file=kernel.h\ntb.file=tb_sa.cpp"
+   }
+  ],
+  "cwd": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov  4 21:47:26 2024",
+ "timestampMillis": "1730728046121",
+ "status": {
+  "cmdId": "22b7a280-7bd1-4021-9818-359c9c67ae3a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Nov  4 21:47:27 2024",
+ "timestampMillis": "1730728047978",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "systolic_modulate",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp",
+     "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2023.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov  4 21:47:27 2024",
+ "timestampMillis": "1730728047979",
+ "buildStep": {
+  "cmdId": "844856b5-731e-4c90-8c83-c86ef810116c",
+  "name": "csynth_design",
+  "logFile": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov  4 21:47:27 2024",
+ "timestampMillis": "1730728047979",
+ "status": {
+  "cmdId": "844856b5-731e-4c90-8c83-c86ef810116c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov  4 21:47:27 2024",
+ "timestampMillis": "1730728047979",
+ "report": {
+  "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov  4 21:47:27 2024",
+ "timestampMillis": "1730728047979",
+ "report": {
+  "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov  4 21:47:27 2024",
+ "timestampMillis": "1730728047979",
+ "report": {
+  "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov  4 21:47:48 2024",
+ "timestampMillis": "1730728068179",
+ "report": {
+  "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov  4 21:47:48 2024",
+ "timestampMillis": "1730728068180",
+ "report": {
+  "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov  4 21:47:48 2024",
+ "timestampMillis": "1730728068180",
+ "report": {
+  "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov  4 21:47:48 2024",
+ "timestampMillis": "1730728068180",
+ "status": {
+  "cmdId": "844856b5-731e-4c90-8c83-c86ef810116c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov  4 21:47:48 2024",
+ "timestampMillis": "1730728068273",
+ "status": {
+  "cmdId": "22b7a280-7bd1-4021-9818-359c9c67ae3a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov  4 21:47:48 2024",
+ "timestampMillis": "1730728068310",
+ "report": {
+  "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/reports/v++_compile_systolic_modulate_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov  4 21:47:48 2024",
+ "timestampMillis": "1730728068310",
+ "report": {
+  "path": "/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/reports/.db/v++_compile_systolic_modulate_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

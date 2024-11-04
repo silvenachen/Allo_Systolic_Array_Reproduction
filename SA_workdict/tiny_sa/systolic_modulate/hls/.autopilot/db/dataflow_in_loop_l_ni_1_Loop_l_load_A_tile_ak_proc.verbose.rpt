@@ -1,0 +1,565 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc'
+================================================================
+* Date:           Mon Nov  4 21:47:46 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        systolic_modulate
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: virtexuplusHBM
+* Target device:  xcu280-fsvh2892-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.482 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       11|       11|  0.110 us|  0.110 us|   11|   11|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                                                        |                                                                              |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                                        Instance                                        |                                    Module                                    |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +----------------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak_fu_50  |dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak  |       10|       10|  0.100 us|  0.100 us|   10|   10|       no|
+        +----------------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+------+---------+---------+-----+
+|         Name        | BRAM_18K|  DSP |    FF   |   LUT   | URAM|
++---------------------+---------+------+---------+---------+-----+
+|DSP                  |        -|     -|        -|        -|    -|
+|Expression           |        -|     -|        0|       14|    -|
+|FIFO                 |        -|     -|        -|        -|    -|
+|Instance             |        -|     -|       11|       62|    -|
+|Memory               |        -|     -|        -|        -|    -|
+|Multiplexer          |        -|     -|        -|       32|    -|
+|Register             |        -|     -|        5|        -|    -|
++---------------------+---------+------+---------+---------+-----+
+|Total                |        0|     0|       16|      108|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available SLR        |     1344|  3008|   869120|   434560|  320|
++---------------------+---------+------+---------+---------+-----+
+|Utilization SLR (%)  |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+|Available            |     4032|  9024|  2607360|  1303680|  960|
++---------------------+---------+------+---------+---------+-----+
+|Utilization (%)      |        0|     0|       ~0|       ~0|    0|
++---------------------+---------+------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------+----+----+----+-----+
+    |                                        Instance                                        |                                    Module                                    | BRAM_18K| DSP| FF | LUT| URAM|
+    +----------------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------+----+----+----+-----+
+    |grp_dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak_fu_50  |dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak  |        0|   0|  11|  62|    0|
+    +----------------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------+----+----+----+-----+
+    |Total                                                                                   |                                                                              |        0|   0|  11|  62|    0|
+    +----------------------------------------------------------------------------------------+------------------------------------------------------------------------------+---------+----+----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |v228_fu_59_p2    |      icmp|   0|  0|  12|           5|           1|
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|  14|           6|           2|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm             |  14|          3|    1|          3|
+    |ap_done               |   9|          2|    1|          2|
+    |indvars_iv26_c_blk_n  |   9|          2|    1|          2|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  32|          7|    3|          7|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |                                                 Name                                                | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                                                            |  2|   0|    2|          0|
+    |ap_done_reg                                                                                          |  1|   0|    1|          0|
+    |grp_dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak_fu_50_ap_start_reg  |  1|   0|    1|          0|
+    |v228_reg_66                                                                                          |  1|   0|    1|          0|
+    +-----------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                                                                |  5|   0|    5|          0|
+    +-----------------------------------------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|           RTL Ports           | Dir | Bits|  Protocol  |                    Source Object                   |    C Type    |
++-------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+|ap_clk                         |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc|  return value|
+|ap_rst                         |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc|  return value|
+|ap_start                       |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc|  return value|
+|ap_done                        |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc|  return value|
+|ap_continue                    |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc|  return value|
+|ap_idle                        |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc|  return value|
+|ap_ready                       |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc|  return value|
+|indvars_iv26                   |   in|    5|     ap_none|                                        indvars_iv26|        scalar|
+|v217_address0                  |  out|    3|   ap_memory|                                                v217|         array|
+|v217_ce0                       |  out|    1|   ap_memory|                                                v217|         array|
+|v217_q0                        |   in|   32|   ap_memory|                                                v217|         array|
+|local_A_0_address0             |  out|    3|   ap_memory|                                           local_A_0|         array|
+|local_A_0_ce0                  |  out|    1|   ap_memory|                                           local_A_0|         array|
+|local_A_0_we0                  |  out|    1|   ap_memory|                                           local_A_0|         array|
+|local_A_0_d0                   |  out|   32|   ap_memory|                                           local_A_0|         array|
+|indvars_iv26_c_din             |  out|    5|     ap_fifo|                                      indvars_iv26_c|       pointer|
+|indvars_iv26_c_num_data_valid  |   in|    3|     ap_fifo|                                      indvars_iv26_c|       pointer|
+|indvars_iv26_c_fifo_cap        |   in|    3|     ap_fifo|                                      indvars_iv26_c|       pointer|
+|indvars_iv26_c_full_n          |   in|    1|     ap_fifo|                                      indvars_iv26_c|       pointer|
+|indvars_iv26_c_write           |  out|    1|     ap_fifo|                                      indvars_iv26_c|       pointer|
++-------------------------------+-----+-----+------------+----------------------------------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.36>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%indvars_iv26_read = read i5 @_ssdm_op_Read.ap_auto.i5, i5 %indvars_iv26"   --->   Operation 3 'read' 'indvars_iv26_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (1.36ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i5P0A, i5 %indvars_iv26_c, i5 %indvars_iv26_read"   --->   Operation 4 'write' 'write_ln0' <Predicate = true> <Delay = 1.36> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.36> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 5> <Depth = 3> <FIFO>
+ST_1 : Operation 5 [1/1] (0.70ns)   --->   "%v228 = icmp_eq  i5 %indvars_iv26_read, i5 0"   --->   Operation 5 'icmp' 'v228' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln0 = call void @dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak, i1 %v228, i32 %v217, i32 %local_A_0"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %indvars_iv26_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %v217, void @empty_3, i32 0, i32 0, void @empty_2, i32 4294967295, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln0 = call void @dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak, i1 %v228, i32 %v217, i32 %local_A_0"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 10 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ indvars_iv26]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ v217]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ local_A_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=1; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ indvars_iv26_c]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+indvars_iv26_read (read         ) [ 000]
+write_ln0         (write        ) [ 000]
+v228              (icmp         ) [ 001]
+specinterface_ln0 (specinterface) [ 000]
+specinterface_ln0 (specinterface) [ 000]
+call_ln0          (call         ) [ 000]
+ret_ln0           (ret          ) [ 000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="indvars_iv26">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="indvars_iv26"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="v217">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="v217"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="local_A_0">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="local_A_0"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="indvars_iv26_c">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="indvars_iv26_c"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_fifo.i5P0A"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ScalarProp_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1004" name="indvars_iv26_read_read_fu_36">
+<pin_list>
+<pin id="37" dir="0" index="0" bw="5" slack="0"/>
+<pin id="38" dir="0" index="1" bw="5" slack="0"/>
+<pin id="39" dir="1" index="2" bw="5" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="indvars_iv26_read/1 "/>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="write_ln0_write_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="0" slack="0"/>
+<pin id="44" dir="0" index="1" bw="5" slack="0"/>
+<pin id="45" dir="0" index="2" bw="5" slack="0"/>
+<pin id="46" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="grp_dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="0" slack="0"/>
+<pin id="52" dir="0" index="1" bw="1" slack="0"/>
+<pin id="53" dir="0" index="2" bw="32" slack="0"/>
+<pin id="54" dir="0" index="3" bw="32" slack="0"/>
+<pin id="55" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="59" class="1004" name="v228_fu_59">
+<pin_list>
+<pin id="60" dir="0" index="0" bw="5" slack="0"/>
+<pin id="61" dir="0" index="1" bw="5" slack="0"/>
+<pin id="62" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="v228/1 "/>
+</bind>
+</comp>
+
+<comp id="66" class="1005" name="v228_reg_66">
+<pin_list>
+<pin id="67" dir="0" index="0" bw="1" slack="1"/>
+<pin id="68" dir="1" index="1" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opset="v228 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="40"><net_src comp="8" pin="0"/><net_sink comp="36" pin=0"/></net>
+
+<net id="41"><net_src comp="0" pin="0"/><net_sink comp="36" pin=1"/></net>
+
+<net id="47"><net_src comp="10" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="48"><net_src comp="6" pin="0"/><net_sink comp="42" pin=1"/></net>
+
+<net id="49"><net_src comp="36" pin="2"/><net_sink comp="42" pin=2"/></net>
+
+<net id="56"><net_src comp="14" pin="0"/><net_sink comp="50" pin=0"/></net>
+
+<net id="57"><net_src comp="2" pin="0"/><net_sink comp="50" pin=2"/></net>
+
+<net id="58"><net_src comp="4" pin="0"/><net_sink comp="50" pin=3"/></net>
+
+<net id="63"><net_src comp="36" pin="2"/><net_sink comp="59" pin=0"/></net>
+
+<net id="64"><net_src comp="12" pin="0"/><net_sink comp="59" pin=1"/></net>
+
+<net id="65"><net_src comp="59" pin="2"/><net_sink comp="50" pin=1"/></net>
+
+<net id="69"><net_src comp="59" pin="2"/><net_sink comp="66" pin=0"/></net>
+
+<net id="70"><net_src comp="66" pin="1"/><net_sink comp="50" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: v217 | {}
+	Port: local_A_0 | {1 2 }
+	Port: indvars_iv26_c | {1 }
+ - Input state : 
+	Port: dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc : indvars_iv26 | {1 }
+	Port: dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc : v217 | {1 2 }
+  - Chain level:
+	State 1
+		call_ln0 : 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------------------------------------------------------------|---------|---------|---------|
+| Operation|                                     Functional Unit                                    |  Delay  |    FF   |   LUT   |
+|----------|----------------------------------------------------------------------------------------|---------|---------|---------|
+|   call   | grp_dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak_fu_50 |  0.387  |    72   |    33   |
+|----------|----------------------------------------------------------------------------------------|---------|---------|---------|
+|   icmp   |                                       v228_fu_59                                       |    0    |    0    |    12   |
+|----------|----------------------------------------------------------------------------------------|---------|---------|---------|
+|   read   |                              indvars_iv26_read_read_fu_36                              |    0    |    0    |    0    |
+|----------|----------------------------------------------------------------------------------------|---------|---------|---------|
+|   write  |                                  write_ln0_write_fu_42                                 |    0    |    0    |    0    |
+|----------|----------------------------------------------------------------------------------------|---------|---------|---------|
+|   Total  |                                                                                        |  0.387  |    72   |    45   |
+|----------|----------------------------------------------------------------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-----------+--------+
+|           |   FF   |
++-----------+--------+
+|v228_reg_66|    1   |
++-----------+--------+
+|   Total   |    1   |
++-----------+--------+
+
+* Multiplexer (MUX) list: 
+|----------------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+|                                          Comp                                          |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|----------------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+| grp_dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak_fu_50 |  p1  |   2  |   1  |    2   ||    9    |
+|----------------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+|                                          Total                                         |      |      |      |    2   ||  0.387  ||    9    |
+|----------------------------------------------------------------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    0   |   72   |   45   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    0   |    -   |    9   |
+|  Register |    -   |    1   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    0   |   73   |   54   |
++-----------+--------+--------+--------+

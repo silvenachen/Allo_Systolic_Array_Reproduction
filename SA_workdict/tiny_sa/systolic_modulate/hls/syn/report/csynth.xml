@@ -1,0 +1,2687 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>virtexuplusHBM</ProductFamily>
+        <Part>xcu280-fsvh2892-2L-e</Part>
+        <TopModelName>systolic_modulate</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>1724</Best-caseLatency>
+            <Average-caseLatency>1724</Average-caseLatency>
+            <Worst-caseLatency>1724</Worst-caseLatency>
+            <Best-caseRealTimeLatency>17.240 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>17.240 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>17.240 us</Worst-caseRealTimeLatency>
+            <Interval-min>1725</Interval-min>
+            <Interval-max>1725</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <l_ni>
+                <Slack>7.30</Slack>
+                <TripCount>24</TripCount>
+                <Latency>1723</Latency>
+                <AbsoluteTimeLatency>17230</AbsoluteTimeLatency>
+                <DataflowPipelineThroughput>68</DataflowPipelineThroughput>
+                <InstanceList/>
+            </l_ni>
+        </SummaryOfLoopLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:640</SourceLocation>
+            <SummaryOfLoopViolations>
+                <l_ni>
+                    <Name>l_ni</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653</SourceLocation>
+                </l_ni>
+            </SummaryOfLoopViolations>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>40</DSP>
+            <FF>5376</FF>
+            <LUT>6332</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>4032</BRAM_18K>
+            <DSP>9024</DSP>
+            <FF>2607360</FF>
+            <LUT>1303680</LUT>
+            <URAM>960</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>v217_address0</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_ce0</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_d0</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_q0</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_we0</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_address1</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_ce1</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_d1</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_q1</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v217_we1</name>
+            <Object>v217</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_address0</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>11</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_ce0</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_d0</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_q0</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_we0</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_address1</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>11</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_ce1</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_d1</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_q1</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v218_we1</name>
+            <Object>v218</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_address0</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_ce0</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_d0</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_q0</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_we0</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_address1</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_ce1</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_d1</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_q1</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>v219_we1</name>
+            <Object>v219</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>systolic_modulate</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>systolic_modulate</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>systolic_modulate</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>systolic_modulate</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>systolic_modulate</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>systolic_modulate</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="5">
+            <ModuleName>systolic_modulate</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>dataflow_in_loop_l_ni_1_U0</InstName>
+                    <ModuleName>dataflow_in_loop_l_ni_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>54</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_U0</InstName>
+                            <ModuleName>dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>126</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak_fu_50</InstName>
+                                    <ModuleName>dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>50</ID>
+                                    <BindInstances>add_ln655_fu_88_p2</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                        </Instance>
+                        <Instance>
+                            <InstName>dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc_U0</InstName>
+                            <ModuleName>dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>137</ID>
+                            <BindInstances>add_ln666_1_fu_253_p2 add_ln666_fu_265_p2 add_ln669_fu_327_p2 add_ln667_fu_352_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>systolic_tile_modulate_U0</InstName>
+                            <ModuleName>systolic_tile_modulate</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>161</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>systolic_tile_modulate_Loop_l_data_load_k8_proc21_U0</InstName>
+                                    <ModuleName>systolic_tile_modulate_Loop_l_data_load_k8_proc21</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>228</ID>
+                                    <BindInstances>add_ln578_1_fu_356_p2 add_ln578_fu_368_p2 add_ln583_fu_419_p2</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>PE_kernel_modulate_0_0_1_U0</InstName>
+                                    <ModuleName>PE_kernel_modulate_0_0_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>259</ID>
+                                    <BindInstances>k_2_fu_116_p2 fmul_32ns_32ns_32_2_max_dsp_1_U39 fadd_32ns_32ns_32_3_full_dsp_1_U38</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>PE_kernel_modulate_1_0_1_U0</InstName>
+                                    <ModuleName>PE_kernel_modulate_1_0_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>269</ID>
+                                    <BindInstances>k1_2_fu_116_p2 fmul_32ns_32ns_32_2_max_dsp_1_U48 fadd_32ns_32ns_32_3_full_dsp_1_U47</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>PE_kernel_modulate_2_0_1_U0</InstName>
+                                    <ModuleName>PE_kernel_modulate_2_0_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>279</ID>
+                                    <BindInstances>k2_2_fu_116_p2 fmul_32ns_32ns_32_2_max_dsp_1_U55 fadd_32ns_32ns_32_3_full_dsp_1_U54</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>PE_kernel_modulate_3_0_1_U0</InstName>
+                                    <ModuleName>PE_kernel_modulate_3_0_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>289</ID>
+                                    <BindInstances>k3_2_fu_116_p2 fmul_32ns_32ns_32_2_max_dsp_1_U62 fadd_32ns_32ns_32_3_full_dsp_1_U61</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>PE_kernel_modulate_4_0_1_U0</InstName>
+                                    <ModuleName>PE_kernel_modulate_4_0_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>299</ID>
+                                    <BindInstances>k4_2_fu_116_p2 fmul_32ns_32ns_32_2_max_dsp_1_U69 fadd_32ns_32ns_32_3_full_dsp_1_U68</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>PE_kernel_modulate_5_0_1_U0</InstName>
+                                    <ModuleName>PE_kernel_modulate_5_0_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>309</ID>
+                                    <BindInstances>k5_2_fu_116_p2 fmul_32ns_32ns_32_2_max_dsp_1_U76 fadd_32ns_32ns_32_3_full_dsp_1_U75</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>PE_kernel_modulate_6_0_1_U0</InstName>
+                                    <ModuleName>PE_kernel_modulate_6_0_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>319</ID>
+                                    <BindInstances>k6_2_fu_116_p2 fmul_32ns_32ns_32_2_max_dsp_1_U83 fadd_32ns_32ns_32_3_full_dsp_1_U82</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>PE_kernel_modulate_7_0_1_U0</InstName>
+                                    <ModuleName>PE_kernel_modulate_7_0_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>329</ID>
+                                    <BindInstances>k7_2_fu_116_p2 fmul_32ns_32ns_32_2_max_dsp_1_U90 fadd_32ns_32ns_32_3_full_dsp_1_U89</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>systolic_tile_modulate_Loop_l_data_drain_k9_proc22_U0</InstName>
+                                    <ModuleName>systolic_tile_modulate_Loop_l_data_drain_k9_proc22</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>339</ID>
+                                    <BindInstances>add_ln628_fu_164_p2 add_ln633_fu_197_p2</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                            <BindInstances>A_fifo_U B_fifo_U B_fifo_2_U B_fifo_4_U B_fifo_6_U B_fifo_8_U B_fifo_10_U B_fifo_12_U B_fifo_14_U A_fifo_1_U B_fifo_1_U A_fifo_2_U B_fifo_3_U A_fifo_3_U B_fifo_5_U A_fifo_4_U B_fifo_7_U A_fifo_5_U B_fifo_9_U A_fifo_6_U B_fifo_11_U A_fifo_7_U B_fifo_13_U A_fifo_8_U B_fifo_15_U</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_U0</InstName>
+                            <ModuleName>dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>182</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj_fu_104</InstName>
+                                    <ModuleName>dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>104</ID>
+                                    <BindInstances>add_ln674_fu_159_p2 empty_fu_173_p2</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>local_A_0_U indvars_iv26_c_U local_B_U local_B_1_49_U local_B_2_50_U local_B_3_51_U local_B_3_U local_B_2_U local_B_1_U local_B_4_U local_C_0_7_U local_C_0_6_U local_C_0_5_U local_C_0_4_U local_C_0_3_U local_C_0_2_U local_C_0_1_U local_C_0_U</BindInstances>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak</Name>
+            <Loops>
+                <l_load_A_tile_ak/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>1.482</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>10</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_load_A_tile_ak>
+                        <Name>l_load_A_tile_ak</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_load_A_tile_ak>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:655</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_load_A_tile_ak>
+                            <Name>l_load_A_tile_ak</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:655</SourceLocation>
+                        </l_load_A_tile_ak>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>11</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>62</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_load_A_tile_ak" OPTYPE="add" PRAGMA="" RTLNAME="add_ln655_fu_88_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:655" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln655"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dataflow_in_loop_l_ni_1_Loop_l_load_A_tile_ak_proc</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>1.482</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>11</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>-</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>16</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>108</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>dataflow_in_loop_l_ni_1_Loop_l_load_B_tile_bk_proc</Name>
+            <Loops>
+                <l_load_B_tile_bk_l_bj/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>4.131</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>66</Best-caseLatency>
+                    <Average-caseLatency>66</Average-caseLatency>
+                    <Worst-caseLatency>66</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.660 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.660 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.660 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>66</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_load_B_tile_bk_l_bj>
+                        <Name>l_load_B_tile_bk_l_bj</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <Latency>64</Latency>
+                        <AbsoluteTimeLatency>0.640 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_load_B_tile_bk_l_bj>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:667</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_load_B_tile_bk_l_bj>
+                            <Name>l_load_B_tile_bk_l_bj</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:666</SourceLocation>
+                        </l_load_B_tile_bk_l_bj>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>25</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>201</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_load_B_tile_bk_l_bj" OPTYPE="add" PRAGMA="" RTLNAME="add_ln666_1_fu_253_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:666" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln666_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_load_B_tile_bk_l_bj" OPTYPE="add" PRAGMA="" RTLNAME="add_ln666_fu_265_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:666" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln666"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_load_B_tile_bk_l_bj" OPTYPE="add" PRAGMA="" RTLNAME="add_ln669_fu_327_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:669" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln669"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_load_B_tile_bk_l_bj" OPTYPE="add" PRAGMA="" RTLNAME="add_ln667_fu_352_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:667" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln667"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>systolic_tile_modulate_Loop_l_data_load_k8_proc21</Name>
+            <Loops>
+                <l_data_load_k8_l_S_n_1_n/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>2.541</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>67</Best-caseLatency>
+                    <Average-caseLatency>67</Average-caseLatency>
+                    <Worst-caseLatency>67</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.670 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.670 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.670 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>67</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_data_load_k8_l_S_n_1_n>
+                        <Name>l_data_load_k8_l_S_n_1_n</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <Latency>65</Latency>
+                        <AbsoluteTimeLatency>0.650 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_data_load_k8_l_S_n_1_n>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:583</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_data_load_k8_l_S_n_1_n>
+                            <Name>l_data_load_k8_l_S_n_1_n</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:578</SourceLocation>
+                        </l_data_load_k8_l_S_n_1_n>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>289</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>290</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_data_load_k8_l_S_n_1_n" OPTYPE="add" PRAGMA="" RTLNAME="add_ln578_1_fu_356_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:578" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln578_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_data_load_k8_l_S_n_1_n" OPTYPE="add" PRAGMA="" RTLNAME="add_ln578_fu_368_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:578" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln578"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_data_load_k8_l_S_n_1_n" OPTYPE="add" PRAGMA="" RTLNAME="add_ln583_fu_419_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:583" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln583"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>PE_kernel_modulate_0_0_1</Name>
+            <Loops>
+                <l_S_k_0_k/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_S_k_0_k>
+                        <Name>l_S_k_0_k</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_S_k_0_k>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:277</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_S_k_0_k>
+                            <Name>l_S_k_0_k</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:267</SourceLocation>
+                        </l_S_k_0_k>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>419</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>460</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_k_0_k" OPTYPE="add" PRAGMA="" RTLNAME="k_2_fu_116_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:267" STORAGESUBTYPE="" URAM="0" VARIABLE="k_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_k_0_k" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U39" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:276" STORAGESUBTYPE="" URAM="0" VARIABLE="v15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_k_0_k" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U38" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:278" STORAGESUBTYPE="" URAM="0" VARIABLE="v17"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>PE_kernel_modulate_1_0_1</Name>
+            <Loops>
+                <l_S_k_0_k1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_S_k_0_k1>
+                        <Name>l_S_k_0_k1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_S_k_0_k1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:316</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_S_k_0_k1>
+                            <Name>l_S_k_0_k1</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:306</SourceLocation>
+                        </l_S_k_0_k1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>418</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>451</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_k_0_k1" OPTYPE="add" PRAGMA="" RTLNAME="k1_2_fu_116_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:306" STORAGESUBTYPE="" URAM="0" VARIABLE="k1_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_k_0_k1" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U48" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:315" STORAGESUBTYPE="" URAM="0" VARIABLE="v36"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_k_0_k1" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U47" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:317" STORAGESUBTYPE="" URAM="0" VARIABLE="v38"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>PE_kernel_modulate_2_0_1</Name>
+            <Loops>
+                <l_S_k_0_k2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_S_k_0_k2>
+                        <Name>l_S_k_0_k2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_S_k_0_k2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:355</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_S_k_0_k2>
+                            <Name>l_S_k_0_k2</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:345</SourceLocation>
+                        </l_S_k_0_k2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>418</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>451</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_k_0_k2" OPTYPE="add" PRAGMA="" RTLNAME="k2_2_fu_116_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:345" STORAGESUBTYPE="" URAM="0" VARIABLE="k2_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_k_0_k2" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U55" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:354" STORAGESUBTYPE="" URAM="0" VARIABLE="v57"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_k_0_k2" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U54" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:356" STORAGESUBTYPE="" URAM="0" VARIABLE="v59"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>PE_kernel_modulate_3_0_1</Name>
+            <Loops>
+                <l_S_k_0_k3/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_S_k_0_k3>
+                        <Name>l_S_k_0_k3</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_S_k_0_k3>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:394</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_S_k_0_k3>
+                            <Name>l_S_k_0_k3</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:384</SourceLocation>
+                        </l_S_k_0_k3>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>418</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>451</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_k_0_k3" OPTYPE="add" PRAGMA="" RTLNAME="k3_2_fu_116_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:384" STORAGESUBTYPE="" URAM="0" VARIABLE="k3_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_k_0_k3" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U62" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:393" STORAGESUBTYPE="" URAM="0" VARIABLE="v78"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_k_0_k3" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U61" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:395" STORAGESUBTYPE="" URAM="0" VARIABLE="v80"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>PE_kernel_modulate_4_0_1</Name>
+            <Loops>
+                <l_S_k_0_k4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_S_k_0_k4>
+                        <Name>l_S_k_0_k4</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_S_k_0_k4>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:433</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_S_k_0_k4>
+                            <Name>l_S_k_0_k4</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:423</SourceLocation>
+                        </l_S_k_0_k4>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>418</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>451</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_k_0_k4" OPTYPE="add" PRAGMA="" RTLNAME="k4_2_fu_116_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:423" STORAGESUBTYPE="" URAM="0" VARIABLE="k4_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_k_0_k4" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U69" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:432" STORAGESUBTYPE="" URAM="0" VARIABLE="v99"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_k_0_k4" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U68" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:434" STORAGESUBTYPE="" URAM="0" VARIABLE="v101"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>PE_kernel_modulate_5_0_1</Name>
+            <Loops>
+                <l_S_k_0_k5/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_S_k_0_k5>
+                        <Name>l_S_k_0_k5</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_S_k_0_k5>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:472</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_S_k_0_k5>
+                            <Name>l_S_k_0_k5</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:462</SourceLocation>
+                        </l_S_k_0_k5>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>418</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>451</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_k_0_k5" OPTYPE="add" PRAGMA="" RTLNAME="k5_2_fu_116_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:462" STORAGESUBTYPE="" URAM="0" VARIABLE="k5_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_k_0_k5" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U76" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:471" STORAGESUBTYPE="" URAM="0" VARIABLE="v120"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_k_0_k5" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U75" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:473" STORAGESUBTYPE="" URAM="0" VARIABLE="v122"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>PE_kernel_modulate_6_0_1</Name>
+            <Loops>
+                <l_S_k_0_k6/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_S_k_0_k6>
+                        <Name>l_S_k_0_k6</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_S_k_0_k6>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:511</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_S_k_0_k6>
+                            <Name>l_S_k_0_k6</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:501</SourceLocation>
+                        </l_S_k_0_k6>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>418</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>451</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_k_0_k6" OPTYPE="add" PRAGMA="" RTLNAME="k6_2_fu_116_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:501" STORAGESUBTYPE="" URAM="0" VARIABLE="k6_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_k_0_k6" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U83" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:510" STORAGESUBTYPE="" URAM="0" VARIABLE="v141"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_k_0_k6" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U82" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:512" STORAGESUBTYPE="" URAM="0" VARIABLE="v143"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>PE_kernel_modulate_7_0_1</Name>
+            <Loops>
+                <l_S_k_0_k7/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>21</Best-caseLatency>
+                    <Average-caseLatency>21</Average-caseLatency>
+                    <Worst-caseLatency>21</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.210 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.210 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.210 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>21</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_S_k_0_k7>
+                        <Name>l_S_k_0_k7</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>19</Latency>
+                        <AbsoluteTimeLatency>0.190 us</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_S_k_0_k7>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:550</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_S_k_0_k7>
+                            <Name>l_S_k_0_k7</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:540</SourceLocation>
+                        </l_S_k_0_k7>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>418</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>451</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_S_k_0_k7" OPTYPE="add" PRAGMA="" RTLNAME="k7_2_fu_116_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:540" STORAGESUBTYPE="" URAM="0" VARIABLE="k7_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fmul" DSP="3" ID="" IMPL="maxdsp" LATENCY="1" LOOP="l_S_k_0_k7" OPTYPE="fmul" PRAGMA="" RTLNAME="fmul_32ns_32ns_32_2_max_dsp_1_U90" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:549" STORAGESUBTYPE="" URAM="0" VARIABLE="v162"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op fadd" DSP="2" ID="" IMPL="fulldsp" LATENCY="2" LOOP="l_S_k_0_k7" OPTYPE="fadd" PRAGMA="" RTLNAME="fadd_32ns_32ns_32_3_full_dsp_1_U89" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:551" STORAGESUBTYPE="" URAM="0" VARIABLE="v164"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>systolic_tile_modulate_Loop_l_data_drain_k9_proc22</Name>
+            <Loops>
+                <l_data_drain_k9_l_S_n_5_n1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>2.541</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>66</Best-caseLatency>
+                    <Average-caseLatency>66</Average-caseLatency>
+                    <Worst-caseLatency>66</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.660 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.660 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.660 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>66</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_data_drain_k9_l_S_n_5_n1>
+                        <Name>l_data_drain_k9_l_S_n_5_n1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <Latency>64</Latency>
+                        <AbsoluteTimeLatency>0.640 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_data_drain_k9_l_S_n_5_n1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:633</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_data_drain_k9_l_S_n_5_n1>
+                            <Name>l_data_drain_k9_l_S_n_5_n1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:628</SourceLocation>
+                        </l_data_drain_k9_l_S_n_5_n1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>19</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>204</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_data_drain_k9_l_S_n_5_n1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln628_fu_164_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:628" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln628"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_data_drain_k9_l_S_n_5_n1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln633_fu_197_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:633" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln633"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>systolic_tile_modulate</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>79</Best-caseLatency>
+                    <Average-caseLatency>79</Average-caseLatency>
+                    <Worst-caseLatency>79</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.790 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.790 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.790 us</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>68</DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>68</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:567</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>40</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>4377</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>4959</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_2_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_2"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_4_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_4"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_6_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_6"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_8_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_8"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_10_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_10"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_12_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_12"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_14_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_14"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_1_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo_1"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_1_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_1"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_2_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo_2"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_3_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_3"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_3_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo_3"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_5_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_5"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_4_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo_4"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_7_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_7"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_5_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo_5"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_9_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_9"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_6_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo_6"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_11_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_11"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_7_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo_7"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_13_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_13"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="A_fifo_8_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:572" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="A_fifo_8"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="B_fifo_15_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:574" STORAGESIZE="32 9 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="B_fifo_15"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj</Name>
+            <Loops>
+                <l_store_C_tile_sj/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>2.291</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>10</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_store_C_tile_sj>
+                        <Name>l_store_C_tile_sj</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </l_store_C_tile_sj>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:674</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_store_C_tile_sj>
+                            <Name>l_store_C_tile_sj</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:674</SourceLocation>
+                        </l_store_C_tile_sj>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>6</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>109</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_store_C_tile_sj" OPTYPE="add" PRAGMA="" RTLNAME="add_ln674_fu_159_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:674" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln674"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="l_store_C_tile_sj" OPTYPE="add" PRAGMA="" RTLNAME="empty_fu_173_p2" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:674" STORAGESUBTYPE="" URAM="0" VARIABLE="empty"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>dataflow_in_loop_l_ni_1_Loop_l_store_C_tile_sj_proc</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>3.330</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>11</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>-</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>15</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>143</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>dataflow_in_loop_l_ni_1</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>158</Best-caseLatency>
+                    <Average-caseLatency>158</Average-caseLatency>
+                    <Worst-caseLatency>158</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>1.580 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.580 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.580 us</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>68</DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>68</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>40</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>5288</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>6293</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_A_0_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:645" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_A_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="indvars_iv26_c_U" SOURCE=":0" STORAGESIZE="5 3 1" STORAGESUBTYPE="scalar prop" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="indvars_iv26_c"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_B_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_B"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_B_1_49_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_B_1_49"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_B_2_50_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_B_2_50"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_B_3_51_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_B_3_51"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_B_3_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_B_3"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_B_2_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_B_2"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_B_1_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_B_1"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="local_B_4_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:646" STORAGESIZE="32 8 2" STORAGESUBTYPE="pipo" STORAGEUSAGE="ram_1p channel" URAM="0" VARIABLE="local_B_4"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="local_C_0_7_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649" STORAGESIZE="32 2 1" STORAGESUBTYPE="task level" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="local_C_0_7"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="local_C_0_6_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649" STORAGESIZE="32 2 1" STORAGESUBTYPE="task level" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="local_C_0_6"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="local_C_0_5_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649" STORAGESIZE="32 2 1" STORAGESUBTYPE="task level" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="local_C_0_5"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="local_C_0_4_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649" STORAGESIZE="32 2 1" STORAGESUBTYPE="task level" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="local_C_0_4"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="local_C_0_3_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649" STORAGESIZE="32 2 1" STORAGESUBTYPE="task level" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="local_C_0_3"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="local_C_0_2_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649" STORAGESIZE="32 2 1" STORAGESUBTYPE="task level" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="local_C_0_2"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="local_C_0_1_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649" STORAGESIZE="32 2 1" STORAGESUBTYPE="task level" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="local_C_0_1"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="local_C_0_U" SOURCE="/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:649" STORAGESIZE="32 2 1" STORAGESUBTYPE="task level" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="local_C_0"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>systolic_modulate</Name>
+            <Loops>
+                <l_ni/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.536</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1724</Best-caseLatency>
+                    <Average-caseLatency>1724</Average-caseLatency>
+                    <Worst-caseLatency>1724</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>17.240 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>17.240 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>17.240 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1725</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <l_ni>
+                        <Name>l_ni</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>24</TripCount>
+                        <Latency>1723</Latency>
+                        <AbsoluteTimeLatency>17.230 us</AbsoluteTimeLatency>
+                        <DataflowPipelineThroughput>68</DataflowPipelineThroughput>
+                        <PipelineDepth>1723</PipelineDepth>
+                        <PipelineType>dataflow</PipelineType>
+                        <InstanceList>
+                            <Instance>dataflow_in_loop_l_ni_1_U0</Instance>
+                        </InstanceList>
+                    </l_ni>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:640</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <l_ni>
+                            <Name>l_ni</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653</SourceLocation>
+                        </l_ni>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>4032</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>40</DSP>
+                    <AVAIL_DSP>9024</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>5376</FF>
+                    <AVAIL_FF>2607360</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>6332</LUT>
+                    <AVAIL_LUT>1303680</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>960</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation>
+        <FIFOInst>
+            <Name>A_fifo_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_2_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_4_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_6_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_8_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_10_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_12_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_14_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>A_fifo_1_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_1_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>A_fifo_2_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_3_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>A_fifo_3_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_5_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>A_fifo_4_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_7_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>A_fifo_5_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_9_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>A_fifo_6_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_11_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>A_fifo_7_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_13_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>A_fifo_8_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>2</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+        <FIFOInst>
+            <Name>B_fifo_15_U</Name>
+            <ParentInst>systolic_tile_modulate_U0</ParentInst>
+            <StaticDepth>9</StaticDepth>
+            <RuntimeDepth>mOutPtr</RuntimeDepth>
+            <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+            </InterfaceList>
+        </FIFOInst>
+    </FIFOInformation>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="v217" index="0" direction="in" srcType="float*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="v217_address0" name="v217_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="v217_ce0" name="v217_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="v217_d0" name="v217_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="v217_q0" name="v217_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="v217_we0" name="v217_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="v217_address1" name="v217_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="v217_ce1" name="v217_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="v217_d1" name="v217_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="v217_q1" name="v217_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="v217_we1" name="v217_we1" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="v218" index="1" direction="in" srcType="float*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="v218_address0" name="v218_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="v218_ce0" name="v218_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="v218_d0" name="v218_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="v218_q0" name="v218_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="v218_we0" name="v218_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="v218_address1" name="v218_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="v218_ce1" name="v218_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="v218_d1" name="v218_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="v218_q1" name="v218_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="v218_we1" name="v218_we1" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="v219" index="2" direction="out" srcType="float*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="v219_address0" name="v219_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="v219_ce0" name="v219_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="v219_d0" name="v219_d0" usage="data" direction="out"/>
+                <hwRef type="port" interface="v219_q0" name="v219_q0" usage="data" direction="in"/>
+                <hwRef type="port" interface="v219_we0" name="v219_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="v219_address1" name="v219_address1" usage="address" direction="out"/>
+                <hwRef type="port" interface="v219_ce1" name="v219_ce1" usage="control" direction="out"/>
+                <hwRef type="port" interface="v219_d1" name="v219_d1" usage="data" direction="out"/>
+                <hwRef type="port" interface="v219_q1" name="v219_q1" usage="data" direction="in"/>
+                <hwRef type="port" interface="v219_we1" name="v219_we1" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="v217_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="v217_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v217_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v217"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v217_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v217_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v217_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v217"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v217_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v217_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v217_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v217"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v217_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="v217_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v217_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v217"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v217_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v217_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v217_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v217"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v217_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v217_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v217_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v217"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v218_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="11">
+            <portMaps>
+                <portMap portMapName="v218_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v218_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v218"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v218_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v218_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v218_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v218"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v218_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v218_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v218_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v218"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v218_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="11">
+            <portMaps>
+                <portMap portMapName="v218_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v218_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v218"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v218_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v218_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v218_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v218"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v218_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v218_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v218_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v218"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v219_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="v219_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v219_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v219"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v219_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v219_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v219_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v219"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v219_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v219_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v219_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v219"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v219_address1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="v219_address1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v219_address1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v219"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v219_d1" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v219_d1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v219_d1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v219"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="v219_q1" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="v219_q1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>v219_q1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="v219"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="3">Port, Direction, Bitwidth</keys>
+                    <column name="v217_address0">out, 3</column>
+                    <column name="v217_address1">out, 3</column>
+                    <column name="v217_d0">out, 32</column>
+                    <column name="v217_d1">out, 32</column>
+                    <column name="v217_q0">in, 32</column>
+                    <column name="v217_q1">in, 32</column>
+                    <column name="v218_address0">out, 11</column>
+                    <column name="v218_address1">out, 11</column>
+                    <column name="v218_d0">out, 32</column>
+                    <column name="v218_d1">out, 32</column>
+                    <column name="v218_q0">in, 32</column>
+                    <column name="v218_q1">in, 32</column>
+                    <column name="v219_address0">out, 8</column>
+                    <column name="v219_address1">out, 8</column>
+                    <column name="v219_d0">out, 32</column>
+                    <column name="v219_d1">out, 32</column>
+                    <column name="v219_q0">in, 32</column>
+                    <column name="v219_q1">in, 32</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="v217">in, float*</column>
+                    <column name="v218">in, float*</column>
+                    <column name="v219">out, float*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="v217">v217_address0, port, offset</column>
+                    <column name="v217">v217_ce0, port, </column>
+                    <column name="v217">v217_d0, port, </column>
+                    <column name="v217">v217_q0, port, </column>
+                    <column name="v217">v217_we0, port, </column>
+                    <column name="v217">v217_address1, port, offset</column>
+                    <column name="v217">v217_ce1, port, </column>
+                    <column name="v217">v217_d1, port, </column>
+                    <column name="v217">v217_q1, port, </column>
+                    <column name="v217">v217_we1, port, </column>
+                    <column name="v218">v218_address0, port, offset</column>
+                    <column name="v218">v218_ce0, port, </column>
+                    <column name="v218">v218_d0, port, </column>
+                    <column name="v218">v218_q0, port, </column>
+                    <column name="v218">v218_we0, port, </column>
+                    <column name="v218">v218_address1, port, offset</column>
+                    <column name="v218">v218_ce1, port, </column>
+                    <column name="v218">v218_d1, port, </column>
+                    <column name="v218">v218_q1, port, </column>
+                    <column name="v218">v218_we1, port, </column>
+                    <column name="v219">v219_address0, port, offset</column>
+                    <column name="v219">v219_ce0, port, </column>
+                    <column name="v219">v219_d0, port, </column>
+                    <column name="v219">v219_q0, port, </column>
+                    <column name="v219">v219_we0, port, </column>
+                    <column name="v219">v219_address1, port, offset</column>
+                    <column name="v219">v219_ce1, port, </column>
+                    <column name="v219">v219_d1, port, </column>
+                    <column name="v219">v219_q1, port, </column>
+                    <column name="v219">v219_we1, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="stream" location="kernel.cpp:259" status="valid" parentFunction="pe_kernel_modulate_0_0" variable="v0" isDirective="0" options="variable=v0 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:260" status="valid" parentFunction="pe_kernel_modulate_0_0" variable="v1" isDirective="0" options="variable=v1 depth=9"/>
+        <Pragma type="stream" location="kernel.cpp:261" status="valid" parentFunction="pe_kernel_modulate_0_0" variable="v2" isDirective="0" options="variable=v2 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:262" status="valid" parentFunction="pe_kernel_modulate_0_0" variable="v3" isDirective="0" options="variable=v3 depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:263" status="valid" parentFunction="pe_kernel_modulate_0_0" variable="v4" isDirective="0" options="variable=v4 complete dim=2"/>
+        <Pragma type="stream" location="kernel.cpp:298" status="valid" parentFunction="pe_kernel_modulate_1_0" variable="v21" isDirective="0" options="variable=v21 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:299" status="valid" parentFunction="pe_kernel_modulate_1_0" variable="v22" isDirective="0" options="variable=v22 depth=9"/>
+        <Pragma type="stream" location="kernel.cpp:300" status="valid" parentFunction="pe_kernel_modulate_1_0" variable="v23" isDirective="0" options="variable=v23 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:301" status="valid" parentFunction="pe_kernel_modulate_1_0" variable="v24" isDirective="0" options="variable=v24 depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:302" status="valid" parentFunction="pe_kernel_modulate_1_0" variable="v25" isDirective="0" options="variable=v25 complete dim=2"/>
+        <Pragma type="stream" location="kernel.cpp:337" status="valid" parentFunction="pe_kernel_modulate_2_0" variable="v42" isDirective="0" options="variable=v42 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:338" status="valid" parentFunction="pe_kernel_modulate_2_0" variable="v43" isDirective="0" options="variable=v43 depth=9"/>
+        <Pragma type="stream" location="kernel.cpp:339" status="valid" parentFunction="pe_kernel_modulate_2_0" variable="v44" isDirective="0" options="variable=v44 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:340" status="valid" parentFunction="pe_kernel_modulate_2_0" variable="v45" isDirective="0" options="variable=v45 depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:341" status="valid" parentFunction="pe_kernel_modulate_2_0" variable="v46" isDirective="0" options="variable=v46 complete dim=2"/>
+        <Pragma type="stream" location="kernel.cpp:376" status="valid" parentFunction="pe_kernel_modulate_3_0" variable="v63" isDirective="0" options="variable=v63 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:377" status="valid" parentFunction="pe_kernel_modulate_3_0" variable="v64" isDirective="0" options="variable=v64 depth=9"/>
+        <Pragma type="stream" location="kernel.cpp:378" status="valid" parentFunction="pe_kernel_modulate_3_0" variable="v65" isDirective="0" options="variable=v65 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:379" status="valid" parentFunction="pe_kernel_modulate_3_0" variable="v66" isDirective="0" options="variable=v66 depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:380" status="valid" parentFunction="pe_kernel_modulate_3_0" variable="v67" isDirective="0" options="variable=v67 complete dim=2"/>
+        <Pragma type="stream" location="kernel.cpp:415" status="valid" parentFunction="pe_kernel_modulate_4_0" variable="v84" isDirective="0" options="variable=v84 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:416" status="valid" parentFunction="pe_kernel_modulate_4_0" variable="v85" isDirective="0" options="variable=v85 depth=9"/>
+        <Pragma type="stream" location="kernel.cpp:417" status="valid" parentFunction="pe_kernel_modulate_4_0" variable="v86" isDirective="0" options="variable=v86 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:418" status="valid" parentFunction="pe_kernel_modulate_4_0" variable="v87" isDirective="0" options="variable=v87 depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:419" status="valid" parentFunction="pe_kernel_modulate_4_0" variable="v88" isDirective="0" options="variable=v88 complete dim=2"/>
+        <Pragma type="stream" location="kernel.cpp:454" status="valid" parentFunction="pe_kernel_modulate_5_0" variable="v105" isDirective="0" options="variable=v105 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:455" status="valid" parentFunction="pe_kernel_modulate_5_0" variable="v106" isDirective="0" options="variable=v106 depth=9"/>
+        <Pragma type="stream" location="kernel.cpp:456" status="valid" parentFunction="pe_kernel_modulate_5_0" variable="v107" isDirective="0" options="variable=v107 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:457" status="valid" parentFunction="pe_kernel_modulate_5_0" variable="v108" isDirective="0" options="variable=v108 depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:458" status="valid" parentFunction="pe_kernel_modulate_5_0" variable="v109" isDirective="0" options="variable=v109 complete dim=2"/>
+        <Pragma type="stream" location="kernel.cpp:493" status="valid" parentFunction="pe_kernel_modulate_6_0" variable="v126" isDirective="0" options="variable=v126 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:494" status="valid" parentFunction="pe_kernel_modulate_6_0" variable="v127" isDirective="0" options="variable=v127 depth=9"/>
+        <Pragma type="stream" location="kernel.cpp:495" status="valid" parentFunction="pe_kernel_modulate_6_0" variable="v128" isDirective="0" options="variable=v128 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:496" status="valid" parentFunction="pe_kernel_modulate_6_0" variable="v129" isDirective="0" options="variable=v129 depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:497" status="valid" parentFunction="pe_kernel_modulate_6_0" variable="v130" isDirective="0" options="variable=v130 complete dim=2"/>
+        <Pragma type="stream" location="kernel.cpp:532" status="valid" parentFunction="pe_kernel_modulate_7_0" variable="v147" isDirective="0" options="variable=v147 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:533" status="valid" parentFunction="pe_kernel_modulate_7_0" variable="v148" isDirective="0" options="variable=v148 depth=9"/>
+        <Pragma type="stream" location="kernel.cpp:534" status="valid" parentFunction="pe_kernel_modulate_7_0" variable="v149" isDirective="0" options="variable=v149 depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:535" status="valid" parentFunction="pe_kernel_modulate_7_0" variable="v150" isDirective="0" options="variable=v150 depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:536" status="valid" parentFunction="pe_kernel_modulate_7_0" variable="v151" isDirective="0" options="variable=v151 complete dim=2"/>
+        <Pragma type="dataflow" location="kernel.cpp:567" status="warning" parentFunction="systolic_tile_modulate" variable="" isDirective="0" options="">
+            <Msg msg_id="214-114" msg_severity="WARNING" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+        </Pragma>
+        <Pragma type="array_partition" location="kernel.cpp:568" status="valid" parentFunction="systolic_tile_modulate" variable="v169" isDirective="0" options="variable=v169 complete dim=2"/>
+        <Pragma type="array_partition" location="kernel.cpp:570" status="valid" parentFunction="systolic_tile_modulate" variable="v170" isDirective="0" options="variable=v170 complete dim=2"/>
+        <Pragma type="stream" location="kernel.cpp:573" status="valid" parentFunction="systolic_tile_modulate" variable="A_fifo" isDirective="0" options="variable=A_fifo depth=2"/>
+        <Pragma type="stream" location="kernel.cpp:575" status="valid" parentFunction="systolic_tile_modulate" variable="B_fifo" isDirective="0" options="variable=B_fifo depth=9"/>
+        <Pragma type="array_partition" location="kernel.cpp:647" status="valid" parentFunction="systolic_modulate" variable="local_B" isDirective="0" options="variable=local_B complete dim=2"/>
+        <Pragma type="array_partition" location="kernel.cpp:650" status="valid" parentFunction="systolic_modulate" variable="local_C" isDirective="0" options="variable=local_C complete dim=2"/>
+        <Pragma type="dataflow" location="kernel.cpp:654" status="warning" parentFunction="systolic_modulate" variable="" isDirective="0" options="">
+            <Msg msg_id="214-114" msg_severity="WARNING" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+        </Pragma>
+        <Pragma type="pipeline" location="kernel.cpp:656" status="valid" parentFunction="systolic_modulate" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="kernel.cpp:668" status="valid" parentFunction="systolic_modulate" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="kernel.cpp:675" status="valid" parentFunction="systolic_modulate" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="interface" location="kernel.cpp:690" status="valid" parentFunction="allo_dditblock" variable="v236" isDirective="0" options="m_axi port=v236 offset=slave bundle=gmem0"/>
+        <Pragma type="interface" location="kernel.cpp:691" status="valid" parentFunction="allo_dditblock" variable="v237" isDirective="0" options="m_axi port=v237 offset=slave bundle=gmem1"/>
+        <Pragma type="interface" location="kernel.cpp:692" status="valid" parentFunction="allo_dditblock" variable="v238" isDirective="0" options="m_axi port=v238 offset=slave bundle=gmem2"/>
+        <Pragma type="pipeline" location="kernel.cpp:696" status="valid" parentFunction="allo_dditblock" variable="" isDirective="0" options="II=1 rewind"/>
+        <Pragma type="pipeline" location="kernel.cpp:704" status="valid" parentFunction="allo_dditblock" variable="" isDirective="0" options="II=1 rewind"/>
+        <Pragma type="pipeline" location="kernel.cpp:718" status="valid" parentFunction="allo_dditblock" variable="" isDirective="0" options="II=1 rewind"/>
+    </PragmaReport>
+</profile>
+

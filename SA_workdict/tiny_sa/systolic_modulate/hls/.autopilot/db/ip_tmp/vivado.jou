@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov  5 00:42:04 2024
+# Process ID: 23306
+# Current directory: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/.autopilot/db/ip_tmp
+# Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/.autopilot/db/ip_tmp/vivado.jou
+# Running On: silvenchen-ASUS-TUF-Gaming-F15-FX507ZM-FX507ZM, OS: Linux, CPU Frequency: 4097.877 MHz, CPU Physical cores: 14, Host memory: 67037 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace

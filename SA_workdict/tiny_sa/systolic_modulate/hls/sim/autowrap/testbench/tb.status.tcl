@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/systolic_modulate/hls/./sim/autowrap/testbench/kernel.cpp_pre.cpp.tb.cpp

@@ -1,0 +1,130 @@
+{
+  "0": {
+    "basicblocks": 51,
+    "calls": "3",
+    "file": "kernel.cpp",
+    "fileloc": 640,
+    "instructions": 148,
+    "loads": {
+      "L": 1,
+      "T": 2
+    },
+    "name": "systolic_modulate",
+    "stores": {
+      "L": 2,
+      "T": 1
+    },
+    "total_instructions": 1104
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 289,
+    "instructions": 39,
+    "name": "PE_kernel_modulate_1_0",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 71
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 367,
+    "instructions": 39,
+    "name": "PE_kernel_modulate_3_0",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 71
+  },
+  "3": {
+    "basicblocks": 49,
+    "calls": "9 1 6 2 8 4 5 7",
+    "file": "kernel.cpp",
+    "fileloc": 562,
+    "instructions": 311,
+    "loads": {
+      "L": 2
+    },
+    "name": "systolic_tile_modulate",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 913
+  },
+  "4": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 445,
+    "instructions": 39,
+    "name": "PE_kernel_modulate_5_0",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 71
+  },
+  "5": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 484,
+    "instructions": 39,
+    "name": "PE_kernel_modulate_6_0",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 71
+  },
+  "6": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 328,
+    "instructions": 39,
+    "name": "PE_kernel_modulate_2_0",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 71
+  },
+  "7": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 523,
+    "instructions": 39,
+    "name": "PE_kernel_modulate_7_0",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 71
+  },
+  "8": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 406,
+    "instructions": 39,
+    "name": "PE_kernel_modulate_4_0",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 71
+  },
+  "9": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "kernel.cpp",
+    "fileloc": 250,
+    "instructions": 39,
+    "name": "PE_kernel_modulate_0_0",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 71
+  }
+}

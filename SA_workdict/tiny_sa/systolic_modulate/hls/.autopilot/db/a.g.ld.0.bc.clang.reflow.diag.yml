@@ -1,0 +1,499 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 657, Column: 8 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_ai
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 676, Column: 8 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Loop '''
+  - LoopName:        l_si
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_ai
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:657:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_modulate
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        l_si
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:676:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_modulate
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 572, Column: 23 }
+Function:        systolic_tile_modulate
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A_fifo
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 574, Column: 23 }
+Function:        systolic_tile_modulate
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B_fifo
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 646, Column: 9 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_B
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 649, Column: 8 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_C
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k7
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:540:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k6
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:501:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k5
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:462:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k4
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:423:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k3
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:384:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k2
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:345:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k1
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:306:15'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_k_0_k
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:267:14'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_n_1_n
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:583:16'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        l_S_n_5_n1
+  - String:          '> at '
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:633:17'
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_A
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_B_0
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_B_1
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_B_2
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_B_3
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_B_4
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_B_5
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_B_6
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_B_7
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_C_0
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_C_1
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_C_2
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_C_3
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_C_4
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_C_5
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_C_6
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...
+--- !Missed
+Pass:            reflow-dataflow-loop-extraction
+Name:            LocalizeArrayToLoop
+DebugLoc:        { File: /home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp, 
+                   Line: 644, Column: 0 }
+Function:        systolic_modulate
+Args:            
+  - String:          'Localizing array '''
+  - ArrayName:       local_C_7
+  - String:          ''' into loop '''
+  - LoopName:        l_ni
+  - String:          ''' ('
+  - LoopLoc:         '/home/silvenchen/Desktop/systolic_test/SA_workdict/tiny_sa/kernel.cpp:653:11'
+  - String:          ') by ignoring loop-carried dependences.'
+...

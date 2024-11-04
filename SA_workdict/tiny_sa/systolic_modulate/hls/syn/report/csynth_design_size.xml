@@ -1,0 +1,58 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 1104, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,   484, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   404, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   394, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   394, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,   589, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   520, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,   520, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   517, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   525, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   517, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   517, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   517, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   517, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,   647, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   702, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="systolic_modulate" col1="kernel.cpp:640" col2="1104" col3="394" col4="525" col5="517" col6="702">
+                    <row id="3" col0="systolic_tile_modulate" col1="kernel.cpp:562" col2="913" col3="319" col4="371" col5="363" col6="">
+                        <row id="9" col0="PE_kernel_modulate_0_0" col1="kernel.cpp:250" col2="71" col3="15" col4="16" col5="15" col6=""/>
+                        <row id="1" col0="PE_kernel_modulate_1_0" col1="kernel.cpp:289" col2="71" col3="15" col4="16" col5="15" col6=""/>
+                        <row id="6" col0="PE_kernel_modulate_2_0" col1="kernel.cpp:328" col2="71" col3="15" col4="16" col5="15" col6=""/>
+                        <row id="2" col0="PE_kernel_modulate_3_0" col1="kernel.cpp:367" col2="71" col3="15" col4="16" col5="15" col6=""/>
+                        <row id="8" col0="PE_kernel_modulate_4_0" col1="kernel.cpp:406" col2="71" col3="15" col4="16" col5="15" col6=""/>
+                        <row id="4" col0="PE_kernel_modulate_5_0" col1="kernel.cpp:445" col2="71" col3="15" col4="16" col5="15" col6=""/>
+                        <row id="5" col0="PE_kernel_modulate_6_0" col1="kernel.cpp:484" col2="71" col3="15" col4="16" col5="15" col6=""/>
+                        <row id="7" col0="PE_kernel_modulate_7_0" col1="kernel.cpp:523" col2="71" col3="15" col4="16" col5="15" col6=""/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

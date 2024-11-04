@@ -1,0 +1,287 @@
+{
+    "1": {
+        "name": "dataflow_in_loop_l_ni.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "645",
+        "instructions": "30",
+        "total_instructions": "666",
+        "calls": "9 3 13 17",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "systolic_modulate",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "640",
+        "instructions": "18",
+        "total_instructions": "684",
+        "calls": "1",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "PE_kernel_modulate_3_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "382",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "dataflow_in_loop_l_ni.1_Loop_l_load_B_tile_bk_proc",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "666",
+        "instructions": "70",
+        "total_instructions": "70",
+        "calls": "",
+        "basicblocks": "13",
+        "loads": {
+            "L": "3",
+            "T": "1"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc_Pipeline_l_load_A_tile_ak",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "655",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "1",
+            "T": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "PE_kernel_modulate_6_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "499",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "PE_kernel_modulate_7_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "538",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "dataflow_in_loop_l_ni.1_Loop_l_store_C_tile_sj_proc_Pipeline_l_store_C_tile_sj",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "674",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "PE_kernel_modulate_0_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "265",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "dataflow_in_loop_l_ni.1_Loop_l_load_A_tile_ak_proc",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "0",
+        "instructions": "7",
+        "total_instructions": "30",
+        "calls": "4",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "PE_kernel_modulate_1_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "304",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "systolic_tile_modulate_Loop_l_data_load_k8_proc21",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "578",
+        "instructions": "104",
+        "total_instructions": "104",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "20"
+        },
+        "stores": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "PE_kernel_modulate_5_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "460",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "systolic_tile_modulate",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "563",
+        "instructions": "87",
+        "total_instructions": "491",
+        "calls": "11 8 10 14 2 15 12 5 6 16",
+        "basicblocks": "1"
+    },
+    "14": {
+        "name": "PE_kernel_modulate_2_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "343",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "PE_kernel_modulate_4_0.1",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "421",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "systolic_tile_modulate_Loop_l_data_drain_k9_proc22",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "628",
+        "instructions": "52",
+        "total_instructions": "52",
+        "calls": "",
+        "basicblocks": "15",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "17": {
+        "name": "dataflow_in_loop_l_ni.1_Loop_l_store_C_tile_sj_proc",
+        "file": "\/home\/silvenchen\/Desktop\/systolic_test\/SA_workdict\/tiny_sa\/kernel.cpp",
+        "fileloc": "649",
+        "instructions": "14",
+        "total_instructions": "45",
+        "calls": "7",
+        "basicblocks": "1"
+    }
+}

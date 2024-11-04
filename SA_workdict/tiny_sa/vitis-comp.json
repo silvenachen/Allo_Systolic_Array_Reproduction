@@ -1,0 +1,12 @@
+{
+  "name": "tiny_sa",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "systolic_modulate"
+  },
+  "previousBuildStatusMap": {}
+}
